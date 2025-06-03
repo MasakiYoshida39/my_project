@@ -1,8 +1,10 @@
 # これはコメントです
 """
 #ターミナルでpython my_file.pyを行う
-# "Hello, World!" という結果を生む式
-print("Hello, " + "World!"  )
+# "青, 黒" という結果を生む式
+print("青、" + "黒"  )
+# 189 という結果を生む式
+print(94+95)
 """
 
-print("Hello, " + "World!"  )
+print(94+95)
