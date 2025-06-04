@@ -1,3 +1,21 @@
+#引数３つの場合
+def add1(num1=1, num2=2, num3=3):
+	return num1 * num2 * num3
+
+def add(num1, num2):
+	return num1 + num2 
+
+
+print(add1(3,9,3)) 
+print(add(3,9)) 
+print(add1()) 
+
+
+
+
+
+
+"""
 # 簡単な関数
 def greet(name):
     return f"こんにちは、{name}さん！"
@@ -7,9 +25,6 @@ message = greet("田中")
 print(message)  
 
 
-
-
-"""
  
  # 8未満の数値を繰り返し出力
 count = 0
