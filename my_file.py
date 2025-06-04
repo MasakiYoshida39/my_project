@@ -1,3 +1,16 @@
+# 簡単な関数
+def greet(name):
+    return f"こんにちは、{name}さん！"
+ 
+# 関数の呼び出し
+message = greet("田中")
+print(message)  
+
+
+
+
+"""
+ 
  # 8未満の数値を繰り返し出力
 count = 0
 while count < 8:
@@ -11,8 +24,7 @@ Rbs = ["砂糖", "カフェイン", "タウリン"]
 for Rb in Rbs:
     print(Rb)
 
-# これはコメントです
-"""
+
 # リストの作成
 Rb = ["砂糖", "カフェイン", "タウリン"]
  
