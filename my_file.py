@@ -1,14 +1,21 @@
-#引数３つの場合
+# 引数3つ、デフォルト値あり
 def add1(num1=1, num2=2, num3=3):
-	return num1 * num2 * num3
+    return num1 * num2 * num3
 
+# 引数2つ、税込み計算
 def add(num1, num2):
-	return num1 + num2 
+    sum = num1 + num2 
+    taxincluded = sum * 1.08
+    consumptiontax = sum * 0.08
+    return sum, taxincluded, consumptiontax
 
+# 関数の呼び出し
+sum, taxincluded, consumptiontax = add(100, 200)
 
-print(add1(3,9,3)) 
-print(add(3,9)) 
-print(add1()) 
+# 結果の表示 int(taxincluded)にすることで小数点を消す
+print(f"合計: {sum}, 税込: {int(taxincluded)}, 消費税: {consumptiontax}")
+print(add1(3, 9, 3)) 
+print(add1())  # デフォルト値使用（1×2×3 = 6）
 
 
 
