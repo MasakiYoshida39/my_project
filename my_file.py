@@ -18,10 +18,13 @@ FizzBuzz問題
 a = 1
 # while文でaが20より小さい場合は繰り返しを続ける
 while a <= 20:
-    if a%3 == 0:
-         print("Fizz")
+    # コードは上から下に流れるからFizzBuzzの処理を先にしないとダメ
+    if a%15 == 0:
+         print(str(a)+"FizzBuzz")
+    elif a%3 == 0:
+        print(str(a)+"Fizz")
     elif a%5 == 0:
-        print("Buzz")
+        print(str(a)+"Buzz")
     else:
         print(a)
     # 毎回aに1を足していく
