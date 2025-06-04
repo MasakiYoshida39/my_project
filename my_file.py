@@ -1,3 +1,19 @@
+#コンストラクターは必ず第1引数にselfを記載（Javaと違う）
+class Person:
+    def __init__(self, name): # コンストラクタ
+		    self.name = name
+    
+    def introduce(self):
+        return f"私の名前は{self.name}です。"
+        
+taro = Person("タカ") # インスタンス化
+# 下の仕組みがよくわからない
+print(taro.introduce()) 
+print(taro.name) 
+
+
+
+"""
 # 引数3つ、デフォルト値あり
 def add1(num1=1, num2=2, num3=3):
     return num1 * num2 * num3
@@ -21,8 +37,6 @@ print(add1())  # デフォルト値使用（1×2×3 = 6）
 
 
 
-
-"""
 # 簡単な関数
 def greet(name):
     return f"こんにちは、{name}さん！"
