@@ -1,4 +1,4 @@
-# 8未満の数値を繰り返し出力
+ # 8未満の数値を繰り返し出力
 count = 0
 while count < 8:
     print(count)  
