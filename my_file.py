@@ -20,6 +20,8 @@ a = 1
 while a <= 20:
     if a%3 == 0:
          print("Fizz")
+    elif a%5 == 0:
+        print("Buzz")
     else:
         print(a)
     # 毎回aに1を足していく
