@@ -1,4 +1,27 @@
-<!-- テンプレート -->
+<form>
+  <label for="contact">お問い合わせ内容</label>
+  <div>
+    <textarea id="contact" name="contact"></textarea>
+  </div>
+</form>
+
+<form action="/submit" method="POST">
+  <label for="feedback">フィードバック:</label>
+  <div>
+  <textarea id="feedback" name="feedback" rows="5" placeholder="フィードバックをここに入力してください"></textarea>
+  </div>
+  <label for="transport">交通手段を選択:</label>
+  <select id="transport" name="transport">
+    <option value="car">車</option>
+    <option value="bike">自転車</option>
+    <option value="train">電車</option>
+    <option value="bus">バス</option>
+    <option value="plane">飛行機</option>
+  </select>
+
+  <input type="submit" value="送信">
+</form>
+<!-- テンプレート 
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -8,10 +31,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- headerに変更 -->
+     headerに変更 
     <header class="header">
       <h1>サンプルサイト</h1>
-      <!-- navタグを使用 -->
+       navタグを使用 
       <nav class="global-nav">
         <ul>
           <li><a href="#">トップページ</a></li>
@@ -22,23 +45,23 @@
       </nav>
     </header>
     
-    <!-- mainタグを使用 -->
+     mainタグを使用 
     <main class="container">
-      <!-- articleタグを使用 -->
+       articleタグを使用 
       <article class="main">
-        <!-- sectionタグを使用-->
+         sectionタグを使用
         <section class="article">
           <h2>ニュース1</h2>
           <p>ここにニュースの内容が表示されます。</p>
         </section>
-        <!-- sectionタグを使用-->
+        sectionタグを使用
         <section class="article">
           <h2>ニュース2</h2>
           <p>ここにニュースの内容が表示されます。</p>
         </section>
       </article>
       
-      <!-- asideタグを使用 -->
+      asideタグを使用
       <aside class="related">
         <h2>おすすめリンク</h2>
         <ul>
@@ -49,12 +72,14 @@
       </aside>
     </main>
     
-    <!-- footerに変更 -->
+    footerに変更 
     <footer class="footer">
       <p>&copy; 2024 サンプルサイト. All rights reserved.</p>
     </footer>
   </body>
 </html>
+-->
+
 
 <!-- HTMLのテンプレープ
 <html lang="ja">
