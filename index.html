@@ -1,3 +1,41 @@
+
+<h1>ユーザー登録</h1>
+
+<form action="/submit" method="POST">
+  <label for="username">ユーザー名:</label><br>
+  <input 
+    type="text" 
+    id="username" 
+    name="username" 
+    placeholder="ユーザー名を入力してください" 
+    minlength="4" 
+    maxlength="10" 
+    required
+  >
+
+  <input type="submit" value="送信">
+</form>
+<br><br><br><br><br><br><br><br>
+<input type="text" name="username" required><br>
+数値や日付の入力フィールドで、最小値・最大値を設定
+<br><input type="number" name="age" min="18" max="99"><br>
+<input type="date" name="birthdate" min="1900-01-01" max="2024-12-31"><br>
+テキストフィールドで入力できる文字数の最小・最大値を制限
+<br><input type="text" name="username" minlength="5" maxlength="15"><br>
+pattern : 正規表現を使って、入力文字がパターンに一致するかどうかをチェックできます。
+<br><input type="text" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="例: 090-1234-5678"><br>
+ユーザーIDなどの入力で半角数字が入力されているかをチェック
+<br>
+<label>ユーザーID（半角英数）
+  <input type="text" pattern="^[0-9A-Za-z]+$">
+</label>
+<br>
+
+
+
+
+
+<!-- 
 <form>
   <label for="contact">お問い合わせ内容</label>
   <div>
@@ -21,6 +59,7 @@
 
   <input type="submit" value="送信">
 </form>
+-->
 <!-- テンプレート 
 <!DOCTYPE html>
 <html lang="ja">
