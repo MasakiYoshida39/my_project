@@ -1,17 +1,27 @@
+html {
+  font-size: 24px;
+}
 /* h1要素の文字色、文字サイズ、背景色をまとめて宣言 */
 h1 {
-  color: blue;
-  font-size: 32px;
+  color: white;
+  font-size: 24px;
+  background-color: blue;
 
 }
+/*100%=1em=1rem＝16px*/
 
 /* p要素とspan要素の文字色と背景色をまとめて宣言 */
-p, span {
-  color: green;
+h3 {
+  background-color: rgb(0, 100, 0);
+  font-size: 0.75rem;
   }
 
 /* span要素の文字色と文字サイズをまとめて宣言 */
+p {
+  color: #000080;
+  font-size: 12px;
+}
+
 span {
-  color: blue;
-  font-size: 24px;
+  color: red;
 }
