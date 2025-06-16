@@ -1,41 +1,13 @@
-
-/*セレクターでid属性を指定（idセレクター）する場合は値の前に#を付ける */
-#red {
-  color: red;
+h2{
+  font-size: 32px;
+  color: #6B8E23;
+}
+.content p{
+  font-size: 20px;
+  color: #20B2AA;
 }
 
-/* セレクターでclass属性を指定（classセレクター）する場合は値の前に.を付ける */
-.red {
+/* sideクラスの中にあるh3要素直下の要素に適用するスタイル */
+.side h3 + p {
   color: red;
-}
-.yellow{
-  color: yellow;
-}
-.white{
-  color: white;
-}
-.red{
-  color: red;
-}
-.blue{
-  color: blue;
-}
-.back-gray{
-  background-color: gray;
-}
-.back-green{
-  background-color: green;
-}
-.back-brown{
-  background-color: brown;
-}
-.back-blue{
-  background-color: blue;
-}
-li{
-  font-size: 16px;
-}
-
-#small{
-  font-size: 12px;
 }
