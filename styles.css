@@ -1,0 +1,18 @@
+/* h1要素の文字色、文字サイズ、背景色をまとめて宣言 */
+h1 {
+  color: black;
+  font-size: 32px;
+  background-color: blue;
+}
+
+/* p要素とspan要素の文字色と背景色をまとめて宣言 */
+p, span {
+  color: red;
+  background-color: yellow;
+}
+
+/* span要素の文字色と文字サイズをまとめて宣言 */
+span {
+  color: blue;
+  font-size: 24px;
+}
