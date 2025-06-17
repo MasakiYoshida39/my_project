@@ -1,4 +1,6 @@
 
+
+""" コメント(2-2)
 x = 0
 limit = 20000
 
@@ -9,8 +11,7 @@ for i in range(2, limit + 1):
     else:
         x += i
 print(x)
-
-
+"""
 
 """ コメント(2-2)
 h = int(5)
