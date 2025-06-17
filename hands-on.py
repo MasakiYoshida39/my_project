@@ -1,4 +1,15 @@
+h = int(5)
+for i in range(1, h + 1):
+    for j in range(i):
+        print("*", end="")
+    print()
 
+
+
+
+
+
+""" コメント(2-1)
 i = int(input("iの数字を入力してください: "))
 j = int(input("jの数字を入力してください: "))
 
@@ -11,12 +22,7 @@ i = j
 j = flee
 
 print("i =", i, ", j =", j)
-
-
-""" コメント(1-3)
 """ 
-
-
 
 """ コメント(1-3)
 # 入力された文字列を変数に格納
