@@ -1,6 +1,39 @@
 
-""" コメント(2-3)
+""" コメント(timedeltaを使用し日付の計算)
 """
+#ランダムな値を生成するためのライブラリ
+import random
+
+# 1から10までのランダムな整数を生成
+random_number = random.randint(1, 10)
+print(random_number)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" コメント(timedeltaを使用し日付の計算)
 
 # 日付の計算
 from datetime import datetime, timedelta
@@ -17,13 +50,7 @@ print("7日後は:", formatted_future_date)
 past_date = today - timedelta(days=7)
 formatted_past_date = past_date.strftime("%Y年%m月%d日")
 print("7日前は:", formatted_past_date)
-
-
-
-
-
-
-
+"""
 
 """ コメント(%Y年%m月%d日に変更)
 
