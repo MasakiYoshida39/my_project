@@ -1,12 +1,20 @@
-p{
-  display: inline-block;
-  background-color: #00008B;
-  color: white;
-  width: 160px;
+li{
+  border: #192F60 1px solid;
+  /*半径8pxで丸める*/
+  border-radius: 8px;
+  width: 350px;
+}
+header{
+  /*右上、左上を半径20pxで丸める*/
+  border-radius: 20px 20px 0 0;
+  background-color: aqua;
   text-align: center;
-  padding: 10px 0;
-  margin-right: 20px;
-  border-style: dotted ridge solid;
-  border-color: yellow yellow red;
-  border-width: 5px 10px;
+}
+div {
+  border-radius: 0 0 20px 20px;
+  background-color: blue;
+}
+/* main要素内にスタイルを適用 */
+main {
+  overflow: auto;
 }
