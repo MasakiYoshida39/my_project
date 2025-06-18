@@ -1,26 +1,12 @@
-h1{
-  font-size: 32px;
-  color: wheat;
-  background-color: midnightblue;
-  /*テキストを水平方向に中央揃えにする*/
-  text-align: center;
-}
-
-div{
-  height: 50px;
-}
-
-h3{
-  color: white;
-  background-color: deepskyblue;
-  line-height: 50px;
-  /*テキストを水平方向に中央揃えにする*/
-  text-align: center;
-}
-
 p{
+  display: inline-block;
+  background-color: #00008B;
   color: white;
-  background-color: #3776AB;
-  /*テキストを水平方向に中央揃えにする*/
+  width: 160px;
   text-align: center;
+  padding: 10px 0;
+  margin-right: 20px;
+  border-style: dotted ridge solid;
+  border-color: yellow yellow red;
+  border-width: 5px 10px;
 }
