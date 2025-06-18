@@ -1,13 +1,24 @@
-h2{
-  font-size: 32px;
-  color: #6B8E23;
-}
-.content p{
+.today{
   font-size: 20px;
-  color: #20B2AA;
 }
-
-/* sideクラスの中にあるh3要素直下の要素に適用するスタイル */
-.side h3 + p {
-  color: red;
+span{
+  background-color: #FFC0CB;
+  height: 28px;
+  display: inline-block;
+}
+.temperature{
+  background-color: #FFD8B2;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.humidity{
+  background-color: #ADD8E6;
+  /*横並びにする方法*/
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+img{
+  display: block;
 }
