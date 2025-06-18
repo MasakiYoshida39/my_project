@@ -1,3 +1,24 @@
+
+""" コメント(2-3)
+"""
+from datetime import datetime
+# now()で現在の日付と時刻を取得
+now = datetime.now()
+# strftimeでフォーマットを任意の形式に変更
+formatted_date = now.strftime("%Y年%m月%d日")
+
+print("今日の日付は", formatted_date)
+
+
+
+
+
+
+
+
+
+""" コメント(datetimeライブラリ)
+
 # datetimeライブラリ(現在の日付と時刻を返す）をインポート
 from datetime import datetime
 
@@ -5,9 +26,7 @@ from datetime import datetime
 now = datetime.now()
 
 print("今日の日付は", now)
-
-
-
+"""
 
 """ コメント(2-3)
 x = 0
@@ -21,7 +40,6 @@ for i in range(2, limit + 1):
         x += i
 print(x)
 """
-
 
 """ コメント(2-2)
 h = int(5)
