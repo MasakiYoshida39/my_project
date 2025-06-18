@@ -1,37 +1,37 @@
 
-""" コメント(timedeltaを使用し日付の計算)
+""" コメント(random ライブラリ)
 """
+#ランダムな値を生成するためのライブラリ
+import random
+
+fruits = ["apple", "banana", "cherry", "grape", "strawberry"]
+
+# リストからランダムな要素を選ぶ
+random_fruit = random.choice(fruits)
+print(random_fruit)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" コメント(random ライブラリ)
+
 #ランダムな値を生成するためのライブラリ
 import random
 
 # 1から10までのランダムな整数を生成
 random_number = random.randint(1, 10)
 print(random_number)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
 
 """ コメント(timedeltaを使用し日付の計算)
 
