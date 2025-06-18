@@ -1,6 +1,32 @@
 
 """ コメント(2-3)
 """
+
+# 日付の計算
+from datetime import datetime, timedelta
+
+# 現在の日付を取得
+today = datetime.now()
+
+# 7日後の日付を計算
+future_date = today + timedelta(days=7)
+formatted_future_date = future_date.strftime("%Y年%m月%d日")
+print("7日後は:", formatted_future_date)
+
+# 7日前の日付を計算
+past_date = today - timedelta(days=7)
+formatted_past_date = past_date.strftime("%Y年%m月%d日")
+print("7日前は:", formatted_past_date)
+
+
+
+
+
+
+
+
+""" コメント(%Y年%m月%d日に変更)
+
 from datetime import datetime
 # now()で現在の日付と時刻を取得
 now = datetime.now()
@@ -8,14 +34,7 @@ now = datetime.now()
 formatted_date = now.strftime("%Y年%m月%d日")
 
 print("今日の日付は", formatted_date)
-
-
-
-
-
-
-
-
+"""
 
 """ コメント(datetimeライブラリ)
 
