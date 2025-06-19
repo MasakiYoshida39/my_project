@@ -1,91 +1,47 @@
-body{
-  display: flex;
-  /* 子要素を縦方向（上から下）に並べる設定  */
-  flex-direction: column;
-  align-items: center;
-  /* Flexbox や Grid レイアウトで使用されるプロパティで
-  要素同士の間隔を 50ピクセル空ける指定 */
-  gap: 50px;
-}
 
-ul{
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
 
-div {
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  line-height: 200px;
-}
-
-/* main要素内にスタイルを適用 */
-main {
-  display: flex;
-  flex-direction: row;
-  /* Flexbox や Grid レイアウトで使うCSSプロパティで
-  主軸（main axis）方向に子要素を中央揃えにする指定 */
-  justify-content: center;
-  gap: 10px;
+.container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* CSSのFlexboxやGridレイアウトでのデフォルト値で、
+  子要素を交差軸方向に親要素の
+  サイズいっぱいに引き伸ばす（stretch）設定*/
+  align-items: stretch;
+  gap: 10px 150px;
 }
 
 
-
-
-
-
-
-
-
-
-
-img {
-  width: 300px;
-  height: 300px;
+/* 
+.container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  Flexbox や Grid レイアウトに使う CSS プロパティで、
+  交差軸（cross axis）方向の末尾（下や右）
+  に子要素を揃える指定
+  align-items: end;
 }
+ */
 
-
-/* input要素に疑似クラスfocus(キーボードやマウスで要素を選択・
-操作できる状態)のスタイルを適用 */
-input:focus {
-  background-color: #CCFFCC;
-  /* 要素の “アウトライン” の色 を指定する  */
-  outline-color: green;
+/* 
+.container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  lexbox や Grid レイアウトに使われるCSSプロパティで、
+  主軸（main axis）方向に要素を等間隔で配置する
+  justify-content: space-evenly;
 }
+*/
 
-/* button要素に疑似クラスhover(ユーザーが要素にマウスポインタ
-を乗せた（ホバーした）ときに適用されるスタイル)のスタイルを適用 */
-button:hover {
-  background-color: #FFFFA8;
-  width: 52px;
+/* 
+.container{
+  display: grid;
+   SS Grid のプロパティで、グリッドの行の高さを指定
+  grid-template-rows: 100px 100px 100px;
+   CSS Gridレイアウトで使うプロパティで
+   、グリッドの列幅を均等に3分割 
+  grid-template-columns: 1fr 1fr 1fr;
 }
-
-li{
-  border: #192F60 1px solid;
-  
-  border-radius: 8px;
-  width: 350px;
-}
-header{
-  /*右上、左上を半径20pxで丸める*/
-  border-radius: 20px 20px 0 0;
-  background-color: aqua;
-  text-align: center;
-}
-
-
-
-header {
-  /*スクロールに応じて要素がある位置に
-  「くっつく」ような動作をする*/
-  position: sticky;
-  top: 0;
-}
-header {
-  position: sticky;
-  top: 0;
-  /* header要素にopacityプロパティを追加 */
-  opacity: 0.9;
-}
+*/
