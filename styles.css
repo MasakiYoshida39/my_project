@@ -1,3 +1,23 @@
+img {
+  width: 300px;
+  height: 300px;
+}
+div {
+  box-sizing: border-box;
+  width: 320px;
+  height: 360px;
+  border: 1px solid #800000;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
 /* input要素に疑似クラスfocus(キーボードやマウスで要素を選択・
 操作できる状態)のスタイルを適用 */
 input:focus {
@@ -13,25 +33,6 @@ button:hover {
   width: 52px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 li{
   border: #192F60 1px solid;
   
@@ -44,22 +45,12 @@ header{
   background-color: aqua;
   text-align: center;
 }
-div {
-  border-radius: 0 0 20px 20px;
-  background-color: blue;
-}
+
 /* main要素内にスタイルを適用 */
 main {
   overflow: auto;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-  /*要素の内容を親要素のサイズに合わせてトリミング
-  拡大縮小して表示する*/
-  object-fit: cover;
-}
 header {
   /*スクロールに応じて要素がある位置に
   「くっつく」ような動作をする*/
