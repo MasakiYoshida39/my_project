@@ -1,3 +1,37 @@
+/* input要素に疑似クラスfocus(キーボードやマウスで要素を選択・
+操作できる状態)のスタイルを適用 */
+input:focus {
+  background-color: #CCFFCC;
+  /* 要素の “アウトライン” の色 を指定する  */
+  outline-color: green;
+}
+
+/* button要素に疑似クラスhover(ユーザーが要素にマウスポインタ
+を乗せた（ホバーした）ときに適用されるスタイル)のスタイルを適用 */
+button:hover {
+  background-color: #FFFFA8;
+  width: 52px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 li{
   border: #192F60 1px solid;
   
