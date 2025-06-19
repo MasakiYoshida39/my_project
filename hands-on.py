@@ -1,22 +1,32 @@
-""" コメント(リストからランダム出力)
+""" コメント(shuffleでリストをシャッフル)
 """
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" コメント(shuffleでリストをシャッフル)
 
 #ランダムな値を生成するためのライブラリ
 import random
 
 numbers = [1, 2, 3, 4, 5]
 
-# リストをシャッフル
+# shuffleでリストをシャッフル
 random.shuffle(numbers)
 print("Shuffled list:", numbers)
-
-
-
-
-
-
+"""
 
 """ コメント(choiceを使用しリストからランダム出力)
 
