@@ -1,6 +1,25 @@
-
-""" コメント(random ライブラリ)
+""" コメント(リストからランダム出力)
 """
+
+
+
+#ランダムな値を生成するためのライブラリ
+import random
+
+numbers = [1, 2, 3, 4, 5]
+
+# リストをシャッフル
+random.shuffle(numbers)
+print("Shuffled list:", numbers)
+
+
+
+
+
+
+
+""" コメント(choiceを使用しリストからランダム出力)
+
 #ランダムな値を生成するためのライブラリ
 import random
 
@@ -9,19 +28,7 @@ fruits = ["apple", "banana", "cherry", "grape", "strawberry"]
 # リストからランダムな要素を選ぶ
 random_fruit = random.choice(fruits)
 print(random_fruit)
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
 
 """ コメント(random ライブラリ)
 
