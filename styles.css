@@ -1,15 +1,46 @@
 
 
+/* containerクラスのdiv要素にスタイルを適用 */
 .container {
   display: grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* CSSのFlexboxやGridレイアウトでのデフォルト値で、
-  子要素を交差軸方向に親要素の
-  サイズいっぱいに引き伸ばす（stretch）設定*/
-  align-items: stretch;
-  gap: 10px 150px;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
 }
+
+/* item〇クラスにスタイルを適用 */
+.item1 {
+  background-color: lightcoral;
+}
+
+
+.item2 {
+  grid-row: span 2;
+   background-color: lightseagreen;
+}
+
+.item3 {
+  grid-column: 1;
+  grid-row: 3 / span 2;
+  background-color: lightskyblue;
+}
+
+.item4 {
+  grid-column: 3;
+  background-color: lightgoldenrodyellow;
+}
+
+.item5 {
+  grid-column: 3;
+   background-color: lightgreen;
+}
+
+.item6 {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: lightpink;
+}
+
+
 
 
 /* 
