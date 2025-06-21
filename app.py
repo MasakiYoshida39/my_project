@@ -79,6 +79,23 @@ def gratitude_message():
 
 
 
+#ユーザー名とパスワードをJSON形式で受取り、その値を返す
+"""
+curl -X POST -d '{"username": "hoge", "password": "123456"}'
+http://localhost:5000/login
+"""
+@app.route('/login', methods=['POST'])
+def login_message():
+    #リクエストの中にあるJSONデータを強制的に取り出す
+    req = request.get_json(force=True)
+    username = req.get('username', None)
+    password = req.get('password', None)
+    return f'username..."{username}"とpassword..."{password}"を登録しました。'
+
+
+
+
+
 
 
 if __name__ == "__main__":
