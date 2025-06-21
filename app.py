@@ -64,6 +64,21 @@ def aphorism():
 
     return aphorism
 
+# /massageへアクセスすると、ねぎらいのメッセージが返ってくる。
+#curl -X POST -d 'name=hoge' http://localhost:5000/message
+#name=　　に出力したい名前を入れPOST で送信
+@app.route('/message', methods=['POST'])
+def gratitude_message():
+    #request.form.get('name')=フォームから送られてきたPOSTデータの 'name' という項目を取得するためのコード
+    username = request.form.get('name')
+    return f'毎日お疲れ様。{username}さん、これからも情熱を忘れずに行こう!!!'
+
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
