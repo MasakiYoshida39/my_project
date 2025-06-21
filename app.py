@@ -2,7 +2,7 @@ from flask import Flask
 from datetime import datetime
 from flask import Flask, request
 import pytz 
-
+import random
 
 app = Flask(__name__)
 """
@@ -27,6 +27,10 @@ def current_time():
     return f'現在時刻は{date}です'
 
 
+"""
+コマンド例: curl -X POST -d 'days=2022-10-03' http://localhost:5000/date
+"""
+
 # /dateにアクセスすると、入力メッセージが表示される
 @app.route('/date', methods=['POST'])
 def week_calculation():
@@ -38,12 +42,27 @@ def week_calculation():
     date = datetime.strptime(input_date, '%Y-%m-%d')
 
     # 日付を曜日に変換する
+    #.weekday() は、日付から曜日を数学的な計算に基づいて自動的に導き出してる
     week = date.weekday()
 
     return f'{date}は{week_list[week]}です'
 
 
+# /aphorismへアクセスすると、名言をランダムに返す
+# curl localhost:5000/aphorism
+@app.route('/aphorism', methods=['GET'])
+def aphorism():
+    aphorism_words = ['Done is better than perfect.',
+                      'Stay hungry, stay foolish',
+                      'We are What We Choose',
+                      'Our greatest weakness lies in giving up.\
+                      The most certain way to succeed is always \
+                      to try just one more time.']
 
+    #random.choice() は、そのリストの中からランダムに1つの要素を選ぶ
+    aphorism = random.choice(aphorism_words)
+
+    return aphorism
 
 
 
