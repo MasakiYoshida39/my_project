@@ -25,3 +25,15 @@ a {
     flex-direction: column;
     gap: 120px;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100px;
+}
+
+.header-logo {
+    height: 24px;
+}
