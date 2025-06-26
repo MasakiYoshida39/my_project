@@ -1,17 +1,22 @@
+print("1つ目の数字")
+x = input()
+print("2つ目の数字")
+y = input()
+nam1 =int(x)
+nam2 =int(y)
+
+print("足し算の合計", nam1 + nam2)
+
+print("引き算の合計", nam1 - nam2)
+
+"""
 x = input()
 for i in x:
     if int(i) == 5:
         print("5です!!")
     else:
         print("5じゃないです")
-
-
-
-
-
-
-
-
+"""
 
 """
 x = 0
@@ -28,7 +33,6 @@ for i in range(10):
         print("連続なし")
     x = j
 """
-
 
 """
 FizzBuzz問題
