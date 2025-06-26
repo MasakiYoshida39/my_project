@@ -1,13 +1,19 @@
+x = input()
+for i in x:
+    if int(i) == 5:
+        print("5です!!")
+    else:
+        print("5じゃないです")
+
+
+
+
+
+
+
+
 
 """
-入力を受け付ける
-
-
-"""
-
-
-
-
 x = 0
 v = 1
 for i in range(10):
@@ -21,7 +27,7 @@ for i in range(10):
         v = 1
         print("連続なし")
     x = j
-
+"""
 
 
 """
