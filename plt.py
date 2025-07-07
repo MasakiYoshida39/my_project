@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
  
 """
 複数のグラフを並べて描画（subplotsを使用）
-"""
-
 
 fig, axs = plt.subplots(1, 2, figsize=(10, 5))  # 1行2列のサブプロット
 x = np.linspace(0, 10, 100)
@@ -15,7 +13,7 @@ axs[0].plot(x, np.sin(x))
 axs[1].plot(x, np.cos(x))
 
 plt.show()  
-
+"""
 
 
 
