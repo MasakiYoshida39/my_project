@@ -4,14 +4,26 @@ import numpy as np
 import matplotlib.pyplot as plt
  
 """
-ヒストグラム
+箱ひげ図
+箱ひげ図（箱ひげ図／Boxplot）は、データのばらつき（分布）を視覚的に示すグラフ
 """
+data = np.random.normal(10, 5, 100)
+#正規分布に従うランダムなデータを生成（平均（μ）標準偏差（σ）100個のデータ）
+plt.boxplot(data)
+#data の 箱ひげ図（Box plot） を描く
+plt.show()
+
+
+
+
+
+"""
+ヒストグラム
 x = np.random.normal(10, 5, 1000)
 plt.hist(x, bins=30)
 #bins=30	データの範囲を分割する 区間（ビン）の数。ここでは30個のビンに分けて表示します。
 plt.show()
-
-
+"""
 
 """
 円グラフ
