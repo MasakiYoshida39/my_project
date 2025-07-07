@@ -4,18 +4,31 @@ import numpy as np
 import matplotlib.pyplot as plt
  
 """
+複数のグラフを並べて描画（subplotsを使用）
+"""
+
+
+fig, axs = plt.subplots(1, 2, figsize=(10, 5))  # 1行2列のサブプロット
+x = np.linspace(0, 10, 100)
+
+axs[0].plot(x, np.sin(x))
+axs[1].plot(x, np.cos(x))
+
+plt.show()  
+
+
+
+
+
+"""
 箱ひげ図
 箱ひげ図（箱ひげ図／Boxplot）は、データのばらつき（分布）を視覚的に示すグラフ
-"""
 data = np.random.normal(10, 5, 100)
 #正規分布に従うランダムなデータを生成（平均（μ）標準偏差（σ）100個のデータ）
 plt.boxplot(data)
 #data の 箱ひげ図（Box plot） を描く
 plt.show()
-
-
-
-
+"""
 
 """
 ヒストグラム
