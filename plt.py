@@ -4,15 +4,23 @@ import numpy as np
 import matplotlib.pyplot as plt
  
 """
-円グラフ
+ヒストグラム
 """
+x = np.random.normal(10, 5, 1000)
+plt.hist(x, bins=30)
+#bins=30	データの範囲を分割する 区間（ビン）の数。ここでは30個のビンに分けて表示します。
+plt.show()
+
+
+
+"""
+円グラフ
 labels = ["A", "B", "C", "D", "E"]
 data = [54, 32, 18, 44, 29]
 plt.pie(data, labels=labels, autopct="%1.1f%%")
 #autopct	割合の表示形式を指定。例: "%1.1f%%" なら 小数1桁のパーセント表示になる。
 plt.show()
-
-
+"""
 
 """
 x = np.linspace(-5, 5, 100) # -5から5までを100ステップに分けた配列を生成
