@@ -5,6 +5,17 @@ import numpy as np
 
 
 
+
+"""
+NumPy20本ノック4
+#np.eye()で単位行列を生成、斜めの成分も生成
+a = np.eye(3)
+print(a)
+print("11111111111")
+b = np.eye(3,4)
+print(b)
+"""
+
 """
 NumPy20本ノック3
 #np.zerosで要素が０しか入っていないベクトルを作成可能
