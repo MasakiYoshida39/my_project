@@ -1,6 +1,21 @@
 #参考 https://www.youtube.com/watch?v=k4YzlaOXfvQ
 #NumPy20本ノック
 import numpy as np
+
+
+
+
+"""
+NumPy20本ノック3
+#np.zerosで要素が０しか入っていないベクトルを作成可能
+a = np.zeros((1,2))
+print(a)
+
+#np.onesで要素が１しか入っていないベクトルを作成可能
+b = np.ones((4,1))
+print(b)
+"""
+
 """
 NumPy20本ノック2
 
