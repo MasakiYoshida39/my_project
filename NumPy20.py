@@ -2,7 +2,25 @@
 #NumPy20本ノック
 import numpy as np
 
+"""
+NumPy20本ノック5
+C = np.array([[1,2],
+              [1,3]])
+print(C)
 
+#形状を習得
+a = C.shape
+print(a)
+#次元を習得
+a = C.ndim
+print(a)
+#データ型を習得
+a = C.dtype
+print(a)
+#要素数を習得
+a = C.size
+print(a)
+"""
 
 
 
