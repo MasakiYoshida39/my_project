@@ -3,20 +3,21 @@
 import numpy as np
 
 
+"""
+NumPy20本ノック9
+#np.linalg.det()=行列式を計算
+b = np.array([[1, 4], [4, 3]])  
+det = np.linalg.det(b)
+print(det)  # 出力: -7.0
 
-
-
-
-
-
-
-
-
-
-
+#np.linalg.inv()=逆行列
+b = np.array([[1, 4], [4, 3]])  
+inv = np.linalg.inv(b)
+print(inv) 
+"""
 
 """
-NumPy20本ノック7
+NumPy20本ノック8
 #転置＝行と列の入れ替え
 a = np.array([1,2,3])
 #a1=a.T一次元は無理
