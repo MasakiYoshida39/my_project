@@ -3,8 +3,39 @@
 import numpy as np
 
 
+
+#足し算
+a = np.array([[1,2],[1,3]])
+b = np.array([[1,4],[4,3]])
+c = a+b
+print(c)
+
+#引き算
+a = np.array([[1,2],[1,3]])
+b = np.array([[1,4],[4,3]])
+c = a-b
+print(c)
+
+#掛け算
+a = np.array([[1,2],[1,3]])
+b = np.array([[1,4],[4,3]])
+
+c=a@b
+print(c)
+c = a.dot(b)
+print(c)
+#アダマール積＝要素が同じ同士の掛け算
+a = np.array([[1,2],[1,3]])
+b = np.array([[1,4],[4,3]])
+c =a * b
+print(c)
+
+
+
+
+
 """
-NumPy20本ノック5
+NumPy20本ノック６
 #1~13までの２こ飛ばしの配列を作成
 a = np.arange(1,13,2)
 print(a)
