@@ -4,6 +4,34 @@ import numpy as np
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+"""
+NumPy20本ノック7
+#転置＝行と列の入れ替え
+a = np.array([1,2,3])
+#a1=a.T一次元は無理
+
+a = np.array([[1,2,3]])
+a1=a.T
+print(a1)
+
+b = np.array([[1,4,3],[4,3,4]])
+b1=b.T
+print(b1)
+"""
+
+"""
+NumPy20本ノック7
 #足し算
 a = np.array([[1,2],[1,3]])
 b = np.array([[1,4],[4,3]])
@@ -29,10 +57,7 @@ a = np.array([[1,2],[1,3]])
 b = np.array([[1,4],[4,3]])
 c =a * b
 print(c)
-
-
-
-
+"""
 
 """
 NumPy20本ノック６
