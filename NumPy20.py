@@ -4,6 +4,18 @@ import numpy as np
 
 
 """
+NumPy20本ノック10
+#行列にスカラーを掛ける
+a = np.array([[1, 4], [4, 3]])  
+a1 = a * 0.2
+print(a1) 
+
+b = np.array([[1,4,3],[4,3,4]])
+b1 = b * 2
+print(b1) 
+"""
+
+"""
 NumPy20本ノック9
 #np.linalg.det()=行列式を計算
 b = np.array([[1, 4], [4, 3]])  
