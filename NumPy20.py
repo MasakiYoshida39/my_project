@@ -2,6 +2,38 @@
 #NumPy20本ノック
 import numpy as np
 
+
+"""
+NumPy20本ノック5
+#1~13までの２こ飛ばしの配列を作成
+a = np.arange(1,13,2)
+print(a)
+
+c = np.array([[1,2,2],
+              [1,3,4],
+              [4,3,5]])
+
+#０スタートの２個目から-1は最後の一個前の値
+a1=a[2]
+print(a1)
+#逆順の取り方
+a1=a[::-1]
+print(a1)
+#1行目
+c1=c[0]
+print(c1)
+#３行１列目
+c1=c[2,0]
+print(c1)
+
+下記を出力する
+[3,4]
+[3,5]
+
+c1 =c[1:,1:]
+print(c1)
+"""
+
 """
 NumPy20本ノック5
 C = np.array([[1,2],
@@ -21,8 +53,6 @@ print(a)
 a = C.size
 print(a)
 """
-
-
 
 """
 NumPy20本ノック4
