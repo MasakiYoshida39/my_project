@@ -3,10 +3,34 @@
 import numpy as np
 
 
-
+"""
+NumPy20本ノック12
+b = np.array([[1,4,3],[4,3,4],[8,9,4]])
+#最大
+b1=b.max()
+print(b1)
+#最小
+b1=b.min()
+print(b1)
+#行毎の最小
+b1=b.min(axis=1)
+print(b1)
+#総和
+b1=b.sum()
+print(b1)
+#平均値
+b1=b.mean()
+print(b1)
+#分散
+b1=b.var()
+print(b1)
+#標準偏差
+b1=b.std()
+print(b1)
+"""
 
 """
-NumPy20本ノック10
+NumPy20本ノック11
 a = np.arange(12)
 #何行何列にする
 a1 = a.reshape(3, 4)
