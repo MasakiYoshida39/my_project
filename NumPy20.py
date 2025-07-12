@@ -6,9 +6,36 @@ import numpy as np
 # matplotlib.pyplotをpltとしてインポート（グラフ描画ライブラリ）
 import matplotlib.pyplot as plt  # 通常、pyplotは plt と略すのが一般的
 
+# ① -10から12まで2刻みの配列（要素数12）を作って4行×3列に整形
+a = np.arange(-10, 13, 2).reshape(4, -1)
+# → a の形状: (4, 3)
 
+# ② 3行4列の単位行列から2を引く（→ 対角が -1、他が -2）
+b = np.eye(3, 4) - 2
+# → b の形状: (3, 4)
 
+# ③ 形状を確認
+a1 = a.shape, b.shape
+print(a1)
+# → ((4, 3), (3, 4))
 
+# ④ 行列積（@）を計算
+ab = a @ b
+print(ab)
+
+# ⑤ 行列abの左上2行2列だけを抽出（スライス）
+c = ab[:2, :2]  # → (2, 2)行列
+print(c)
+
+# ⑥ 行列cの転置（行と列を入れ替える）
+c1 = c.T  # → (2, 2)行列（転置しても2×2）
+print(c1)
+# ⑦ 転置した行列の行列式（スカラー）を計算
+c2 =np.linalg.det(c.T)
+print(c2)
+# ⑧ 行列式が0でなければ逆行列を求める
+c3 =np.linalg.inv(c.T)
+print(c3)
 
 
 
