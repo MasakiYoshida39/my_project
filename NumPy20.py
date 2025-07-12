@@ -4,6 +4,25 @@ import numpy as np
 
 
 """
+NumPy20本ノック16
+#.reshape(3, -1) は3行にして、列数は自動で計算という意味
+a = np.array([[1,4,3],[8,5,4],[2,6,7]]).reshape(3,-1)
+b = np.array([[1,4,3],[4,3,4],[8,9,4]]).reshape(3,-1)
+#縦結合
+tab=np.vstack((a,b))
+print(tab) 
+#横結合
+yab=np.hstack((a,b))
+print(yab) 
+#縦に2分割
+tab2=np.vsplit(tab,2)
+print(tab2) 
+#横に2分割
+yab2=np.hsplit(yab,2)
+print(yab2) 
+"""
+
+"""
 NumPy20本ノック15
 #.reshape(3, -1) は3行にして、列数は自動で計算という意味
 a = np.array([[1,4,3],[8,5,4],[2,6,7]]).reshape(3,-1)
