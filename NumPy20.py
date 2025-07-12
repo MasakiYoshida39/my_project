@@ -1,7 +1,45 @@
 #参考 https://www.youtube.com/watch?v=k4YzlaOXfvQ
 #NumPy20本ノック
+# NumPyをnpとしてインポート（数値計算ライブラリ）
 import numpy as np
 
+# matplotlib.pyplotをpltとしてインポート（グラフ描画ライブラリ）
+import matplotlib.pyplot as plt  # 通常、pyplotは plt と略すのが一般的
+
+
+"""
+NumPy20本ノック17-1
+# 0〜29の整数をランダムに100個生成（例：アンケートの点数や日付のようなイメージ）
+date = np.random.randint(0, 30, 100)
+print(date)  # ランダムな整数配列を出力して確認
+
+# ヒストグラムを描画（各値が何回出てきたかを棒グラフで表示）
+plt.hist(date)
+plt.show()
+"""
+
+"""
+NumPy20本ノック17-1
+# 0 から 2π（円周）までを500等分した数値を作成 → x軸のデータ
+x = np.linspace(0, 2 * np.pi, 500)
+print(x)  # 作成したxの配列を出力（確認用）
+
+# xの要素数（500）を取得して表示
+x1 = x.size
+print(x1)
+
+# xに対するsin(x)の値を計算し、グラフに描画（折れ線グラフ）
+x2 = plt.plot(x, np.sin(x))  # sin波の描画
+print(x2)  # プロットオブジェクトがリスト形式で出力される（Line2Dオブジェクト）
+
+# xに対するcos(x)も同じグラフに重ねて描画
+x3 = plt.plot(x, np.cos(x))  # cos波の描画
+print(x3)  # 同様にLine2Dオブジェクトが出力される
+
+# 描画を実行して、ウィンドウにグラフを表示する
+# ※plt.show() を呼び出さないと、グラフは表示されない！
+plt.show()
+"""
 
 """
 NumPy20本ノック16
