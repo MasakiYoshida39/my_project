@@ -3,15 +3,23 @@
 import numpy as np
 
 
-
-
+"""
+NumPy20本ノック14
+a = np.array([1,np.pi,np.pi/1,np.pi/2]).reshape(2,-1)
+#sinを求める
+a1 = np.sin(a)
+print(a1) 
+#cosを求める
+a1 = np.cos(a)
+print(a1) 
+"""
 
 
 
 
 
 """
-NumPy20本ノック12
+NumPy20本ノック13
 a = np.array([1,4,1,2]).reshape(2,-1)
 #平方根
 a1 = np.sqrt(a)
