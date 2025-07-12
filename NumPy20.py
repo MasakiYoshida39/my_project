@@ -3,6 +3,25 @@
 import numpy as np
 
 
+
+
+
+
+
+
+
+"""
+NumPy20本ノック12
+a = np.array([1,4,1,2]).reshape(2,-1)
+#平方根
+a1 = np.sqrt(a)
+print(a1) 
+
+#指数関数
+a1 = np.exp(a)
+print(a1) 
+"""
+
 """
 NumPy20本ノック12
 b = np.array([[1,4,3],[4,3,4],[8,9,4]])
