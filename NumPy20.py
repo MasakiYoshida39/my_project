@@ -6,6 +6,24 @@ import numpy as np
 # matplotlib.pyplotをpltとしてインポート（グラフ描画ライブラリ）
 import matplotlib.pyplot as plt  # 通常、pyplotは plt と略すのが一般的
 
+"""
+NumPy20本ノック20
+
+# ① -100〜99の範囲でランダムな整数を300個生成 → x座標用
+date1 = np.random.randint(-100, 100, 300)
+print(date1)
+
+# ② -100〜99の範囲でランダムな整数を300個生成 → y座標用
+date2 = np.random.randint(-100, 100, 300)
+print(date2)
+# ③ 散布図を描画（横軸date1、縦軸date2）
+plt.scatter(date1,date2)
+# ④ グラフを表示
+plt.show()
+"""
+
+"""
+NumPy20本ノック19
 # ① -10から12まで2刻みの配列（要素数12）を作って4行×3列に整形
 a = np.arange(-10, 13, 2).reshape(4, -1)
 # → a の形状: (4, 3)
@@ -36,13 +54,7 @@ print(c2)
 # ⑧ 行列式が0でなければ逆行列を求める
 c3 =np.linalg.inv(c.T)
 print(c3)
-
-
-
-
-
-
-
+"""
 
 """
 NumPy20本ノック18
