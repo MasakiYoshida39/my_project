@@ -3,6 +3,16 @@
 import numpy as np
 
 
+
+
+"""
+NumPy20本ノック10
+a = np.arange(12)
+#何行何列にする
+a1 = a.reshape(3, 4)
+print(a1)
+"""
+
 """
 NumPy20本ノック10
 #行列にスカラーを掛ける
