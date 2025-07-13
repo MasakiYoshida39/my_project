@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ランダム背景画像</title>
+  <style>
+    body {
+      background-size: cover;
+      /* 背景画像を要素に合わせて拡大・縮小 */
+      background-repeat: no-repeat;
+      /* 背景画像を繰り返さない */
+      background-attachment: fixed;
+      /* 背景画像を固定 */
+    }
+
+    .random-image {
+      width: 100%;
+      height: 100vh;
+      /* 画面全体を覆う */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="random-image">
+  </div>
+
+  <script>
+    // 背景画像にしたい画像のURLを配列で定義
+    const imageUrls = [
+      'RB大宮.png',
+      'ゴリラ.jpg',
+      'ザルツブルク.png',
+      // 他の画像URLも追加
+    ];
+
+    // ランダムに画像を選択する関数
+    function getRandomImage() {
+      const randomIndex = Math.floor(Math.random() * imageUrls.length);
+      return imageUrls[randomIndex];
+    }
+
+    // ページの読み込み時に実行
+    window.onload = function () {
+      // ランダムな画像を選択
+      const randomImageUrl = getRandomImage();
+
+      // 選択した画像を背景に設定
+      const element = document.querySelector('.random-image');
+      element.style.backgroundImage = `url('${randomImageUrl}')`;
+    };
+  </script>
+</body>
+
+</html>
