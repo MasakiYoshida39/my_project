@@ -2,7 +2,25 @@
 参考URL
 https://www.youtube.com/watch?v=ZQZ38rK28Gk
 """
+
+"""
+Pandas20本ノック4
 import pandas as pd
+df=pd.read_csv('weather.csv')
+#カラムの確認
+df1 = df.dtypes
+print(df1)
+#サイズを確認
+df1 = df.shape
+print(df1)
+# カラムを表示
+df1 = df.columns
+print(df1)
+# インデックス番号取り出し
+df1 = df.index
+print(df1)
+"""
+
 
 """
 Pandas20本ノック3
