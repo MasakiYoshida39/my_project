@@ -6,6 +6,18 @@ import pandas as pd
 df=pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 
+"""
+Pandas20本ノック8
+#重複を除去 指定しないと全てが一致しないと無理
+df1 = df_pe.drop_duplicates()
+print(df1)
+
+df1 = df_pe.drop_duplicates(subset = 'nationality')
+print(df1)
+"""
+
+"""
+Pandas20本ノック7
 #ユニークな値の抽出＝一次元のみOK
 df1 = df_pe['nationality'].unique()
 print(df1)
@@ -13,6 +25,7 @@ df1 = df_pe['name'].unique()
 print(df1)
 df1 = df_pe['age'].unique()
 print(df1)
+"""
 
 """
 Pandas20本ノック6
