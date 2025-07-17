@@ -7,6 +7,16 @@ df=pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 
 
+
+
+#並び替え(昇順)
+df1 = df.sort_values('平均気温(℃)')
+print(df1)
+
+#並び替え（降順）
+df1 = df.sort_values('平均気温(℃)' , ascending = False)
+print(df1)
+
 """
 Pandas20本ノック9
 #カラム名の削除
