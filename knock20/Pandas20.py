@@ -4,6 +4,31 @@ https://www.youtube.com/watch?v=ZQZ38rK28Gk
 """
 import pandas as pd
 df=pd.read_csv('weather.csv')
+df_pe = pd.read_csv('people.csv')
+
+
+"""
+Pandas20本ノック6
+print(df_pe)
+
+df1 = df_pe[df_pe['nationality'] == 'America']
+print(df1)
+
+df1 = df_pe.query('nationality == "America"')
+print(df1)
+
+df1 = df_pe['nationality'].isin(['America'])
+print(df1)
+
+#20以上30未満
+
+df1 = df_pe[(df_pe['age'] >= 20) & (df_pe['age'] < 30)]
+print(df1)
+
+df1 = df_pe.query('age >=20 & age <30')
+print(df1)
+"""
+
 
 """
 Pandas20本ノック5
