@@ -2,11 +2,21 @@
 参考URL
 https://www.youtube.com/watch?v=ZQZ38rK28Gk
 """
+import pandas as pd
+df=pd.read_csv('weather.csv')
+
+"""
+Pandas20本ノック5
+#任意の要素の取り出し(行、列)
+df1 = df.iloc[4:10,2:6]
+print(df1)
+df1 = df.loc[5:10,'平均気温(℃)': '最深積雪(cm)']
+print(df1)
+"""
 
 """
 Pandas20本ノック4
-import pandas as pd
-df=pd.read_csv('weather.csv')
+
 #カラムの確認
 df1 = df.dtypes
 print(df1)
@@ -20,7 +30,6 @@ print(df1)
 df1 = df.index
 print(df1)
 """
-
 
 """
 Pandas20本ノック3
