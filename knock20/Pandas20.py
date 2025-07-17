@@ -6,6 +6,13 @@ import pandas as pd
 df=pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 
+#ユニークな値の抽出＝一次元のみOK
+df1 = df_pe['nationality'].unique()
+print(df1)
+df1 = df_pe['name'].unique()
+print(df1)
+df1 = df_pe['age'].unique()
+print(df1)
 
 """
 Pandas20本ノック6
