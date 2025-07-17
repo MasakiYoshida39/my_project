@@ -3,12 +3,26 @@
 https://www.youtube.com/watch?v=ZQZ38rK28Gk
 """
 import pandas as pd
-df=pd.read_csv('weather.csv')
+
+# データ読み込み
+df = pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 
+"""
+Pandas20本ノック11
+# ダミー変数の処理（
+df1 = pd.get_dummies(df_pe['nationality'])
+print("【単一列のダミー変数】")
+print(df1)
 
+# ダミー変数の結合
+df2 = pd.get_dummies(df_pe, columns=['nationality'])
+print("【DataFrameごとのダミー結合】")
+print(df2)
+"""
 
-
+"""
+Pandas20本ノック10
 #並び替え(昇順)
 df1 = df.sort_values('平均気温(℃)')
 print(df1)
@@ -16,6 +30,7 @@ print(df1)
 #並び替え（降順）
 df1 = df.sort_values('平均気温(℃)' , ascending = False)
 print(df1)
+"""
 
 """
 Pandas20本ノック9
