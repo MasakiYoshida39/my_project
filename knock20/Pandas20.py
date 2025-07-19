@@ -8,11 +8,25 @@ import pandas as pd
 df = pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 
+"""
+Pandas20本ノック14
+# 欠損値の削除（列）axis=1で列 2で行
+df1 = df.dropna(axis=1).head()
+print(df1)
+"""
 
+
+
+
+
+
+
+"""
+Pandas20本ノック13
 # 欠損値の補完
 df1 = df.fillna(0).head()
 print(df1)
-
+"""
 
 """
 Pandas20本ノック12
