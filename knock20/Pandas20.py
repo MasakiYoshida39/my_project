@@ -9,6 +9,14 @@ df = pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 df_ir = pd.read_csv('iris.csv')
 
+
+"""
+Pandas20本ノック16
+# グループごとの集計
+df1 = df_ir.groupby('Class').mean()
+print(df1)
+"""
+
 """
 Pandas20本ノック15
 # ユニークな値と出現回数を確認
@@ -17,8 +25,6 @@ print(df1)
 df1 = df_ir['Class'].value_counts()
 print(df1)
 """
-
-
 
 """
 Pandas20本ノック14
