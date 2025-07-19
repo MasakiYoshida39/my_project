@@ -9,6 +9,27 @@ df = pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 df_ir = pd.read_csv('iris.csv')
 
+"""
+Pandas20本ノック17
+#平均値
+df1 = df.mean()
+print(df1)
+#中央値
+df1 = df.median()
+print(df1)
+#標準偏差
+df1 = df.std()
+print(df1)
+#最大値
+df1 = df.max()
+print(df1)
+#最小値
+df1 = df.min()
+print(df1)
+#各カラムの指標を確認
+df1 = df.describe()
+print(df1)
+"""
 
 """
 Pandas20本ノック16
