@@ -9,33 +9,52 @@
     <link rel="stylesheet" href="sample.css">
     <script src="sample.js"></script>
     <style>
-        header {
-            background-color: rgb(247, 202, 224);
-        }
+        /*ヘッダーCSS*/
 
-        .header {
-            justify-content: space-between;
+        /*ヘッダー全体*/
+        .header-1 {
+            box-sizing: border-box;
+            width: 100%;
+            background-color: rgb(236, 72, 153);
+            position: relative;
             display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .bo {
+            position: absolute;
+            left: 20px
+        }
+
+        .image {
+            height: 20px;
+            width: 20px;
+        }
+
+        /*ヘッダーメイン*/
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            padding: 0 2em;
+        }
+
+        .logo-img {
+            width: 70px;
         }
 
 
-        div {
-            margin-top: 30px;
-        }
-
-        .a {
-            text-indent: -500px
-        }
-
-
+        /*アイコンを中に入れる*/
         .container {
             margin-top: 30px;
         }
 
+        /*アイコンを中に入れる*/
         .textbox {
-            width: 360px;
-            padding: 11px 10px;
+            width: 300px;
+            height: 50px;
             border-radius: 10px;
             border-top: 1px solid #aaa;
             border-left: 1px solid #aaa;
@@ -44,17 +63,59 @@
             font-size: 16px;
         }
 
+        /*アイコンを中に入れる*/
         .b {
+            text-align: left;
             margin-top: 30px;
-            text-indent: -300px
+
         }
 
+        /*アイコンを中に入れる*/
+        .search_box {
+            display: inline-block;
+            /* なくても大丈夫だけど、念の為 */
+            position: relative;
+            /* 基準値とする */
+            text-align: center;
+        }
 
+        /*アイコンを中に入れる*/
+        .search_box input {
+            padding: 3px 0 3px 2em;
+            /* アイコンを設置するため左の余白を多めに指定*/
+        }
 
+        /*アイコンを中に入れる*/
+        .search_box::before {
+            content: "";
+            /* 疑似要素に必須 */
+            width: 30px;
+            /* アイコンの横幅 */
+            height: 16px;
+            /* アイコンの高さ */
+            background: url(bk.png) no-repeat center center / auto 100%;
+            /* 背景にアイコン画像を配置 */
+            display: inline-block;
+            /* 高さを持たせるためにインラインブロック要素にする */
+            position: absolute;
+            /* 相対位置に指定 */
+            top: 20px;
+            /* アイコンの位置。微調整してね */
+            left: 10px;
+            /* アイコンの位置。微調整してね */
+        }
 
+        /*アイコンを中に入れる*/
+        .c {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*アイコンを中に入れる*/
         .kadomaru {
-            width: 456px;
-            height: 50px;
+            width: 335px;
+            height: 59px;
             font-size: 12px;
             color: #FFFFFF;
             background: rgb(236, 72, 153);
@@ -63,10 +124,7 @@
             margin-top: 30px;
         }
 
-        .container {
-            text-align: center;
-        }
-
+        /*アイコンを中に入れる*/
         .btn {
             color: rgb(236, 72, 153);
         }
@@ -82,32 +140,50 @@
 
 <body>
     <!----- ヘッダー ----->
-    <header>
-        <div class="header">
-            <div>戻りボタン</div>
-            <div class="a">新規登録</div>
-        </div>
 
+    <header class="header-1">
+        <a href="top.html" class="bo">
+            <img src="bk.png" alt="Parrots" class="image">
+        </a>
+        <div class="header-inner">
+            新規作成
+        </div>
     </header>
 
 
 
+
+
+
     <!----- メインコンテンツ ----->
-    <div class="container">
+    <div class="c">
         <form action="main.html" method="post">
-            <p class="b">ユーザー名：<br>
-                <input type="text" name="name" value="" placeholder="mentaiko" class="textbox">
-            </p>
-            <p class="b">メールアドレス：<br>
-                <input type="email" name="email-address" value="" placeholder="xxxx@example.com" class="textbox"><br>
-            </p>
+            <div class="b">名前<br>
+                <div class="search_box">
+                    <input type="text" name="name" value="" placeholder="mentaiko" class="textbox">
+                </div>
+            </div>
+
+            <div class="b">メールアドレス<br>
+                <div class="search_box">
+                    <input type="email" name="email-address" value="" placeholder="xxxx@example.com"
+                        class="textbox"><br>
+                </div>
+            </div>
+
             <!----- タイプ何？ ----->
-            <p class="b">パスワード<br>
-                <input type="text" name="mail" value="" placeholder="画像にする" class="textbox">
-            </p>
-            <p class="b">パスワード（確認）<br>
-                <input type="text" name="mail" value="" placeholder="画像にする" class="textbox">
-            </p>
+            <div class="b">パスワード<br>
+                <div class="search_box">
+                    <input type="text" name="mail" value="" placeholder="画像にする" class="textbox">
+                </div>
+            </div>
+
+            <div class="b">パスワード（確認）<br>
+                <div class="search_box">
+                    <input type="text" name="mail" value="" placeholder="画像にする" class="textbox">
+                </div>
+            </div>
+
             <p><input type="submit" value="登録" class="kadomaru"></p>
         </form>
     </div>
