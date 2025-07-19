@@ -12,6 +12,12 @@ df_ir = pd.read_csv('iris.csv')
 import matplotlib.pyplot as plt
 
 """
+Pandas20本ノック19
+#相関係数の算出
+df1 = df[['平均気温','降水量の合計','日照時間']].corr()
+print(df1)
+"""
+"""
 Pandas20本ノック18
 #折れ線グラフの作成
 df[:50].plot(x='年月日', y=['平均気温(℃)', '最高気温(℃)', '最低気温(℃)'], legend=True)
