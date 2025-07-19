@@ -12,6 +12,12 @@ df_ir = pd.read_csv('iris.csv')
 import matplotlib.pyplot as plt
 
 """
+Pandas20本ノック20
+# export.csvsに出力
+df.fillna(0).to_csv('export.csv',index=False)
+"""
+
+"""
 Pandas20本ノック19
 #相関係数の算出
 df1 = df[['平均気温','降水量の合計','日照時間']].corr()
