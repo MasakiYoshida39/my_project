@@ -9,6 +9,15 @@ df = pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 df_ir = pd.read_csv('iris.csv')
 
+import matplotlib.pyplot as plt
+
+"""
+Pandas20本ノック18
+#折れ線グラフの作成
+df[:50].plot(x='年月日', y=['平均気温(℃)', '最高気温(℃)', '最低気温(℃)'], legend=True)
+plt.show()
+"""
+
 """
 Pandas20本ノック17
 #平均値
