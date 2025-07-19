@@ -10,8 +10,7 @@
     <script src="sample.js"></script>
     <style>
         /*ヘッダーCSS*/
-
-        /*ヘッダー全体*/
+        /*ヘッダー全体について*/
         .header-1 {
             box-sizing: border-box;
             width: 100%;
@@ -22,17 +21,19 @@
             justify-content: center;
         }
 
+        /*画像ボタンの配置について*/
         .bo {
             position: absolute;
             left: 20px
         }
 
+        /*画像ボタンの画像サイズについて*/
         .image {
             height: 20px;
             width: 20px;
         }
 
-        /*ヘッダーメイン*/
+        /*ヘッダー内の今いるページの表示について*/
         .header-inner {
             display: flex;
             align-items: center;
@@ -41,18 +42,53 @@
             padding: 0 2em;
         }
 
-        .logo-img {
-            width: 70px;
+
+        /*maneのCSS*/
+        /*入力ホーム全体のCSSについて*/
+        .c {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-
-        /*アイコンを中に入れる*/
-        .container {
+        /*入力欄上の文字のCSSについて*/
+        .b {
+            text-align: left;
+            /*↓間隔がfigmaでの表記がわからないので後日*/
             margin-top: 30px;
         }
 
-        /*アイコンを中に入れる*/
+        /*入力欄全体のCSSについて*/
+        .search_box {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+        }
+
+        /*入力の画像を真ん中にするため*/
+        .search_box input {
+            padding: 3px 0 3px 2em;
+        }
+
+        /*入力欄の画像の変更*/
+        /*↓を複製し画像を設定する*/
+        .search_box::before {
+            content: "";
+            width: 30px;
+            height: 16px;
+            /* 使用する画像によって変更 */
+            background: url(bk.png) no-repeat center center / auto 100%;
+            display: inline-block;
+            position: absolute;
+            /* アイコンの位置。後日微調整 */
+            top: 20px;
+            /* アイコンの位置。後日微調整 */
+            left: 10px;
+        }
+
+        /*入力欄の枠について*/
         .textbox {
+            /*↓枠のサイズがfigmaでの表記がわからないので後日*/
             width: 300px;
             height: 50px;
             border-radius: 10px;
@@ -63,57 +99,9 @@
             font-size: 16px;
         }
 
-        /*アイコンを中に入れる*/
-        .b {
-            text-align: left;
-            margin-top: 30px;
-
-        }
-
-        /*アイコンを中に入れる*/
-        .search_box {
-            display: inline-block;
-            /* なくても大丈夫だけど、念の為 */
-            position: relative;
-            /* 基準値とする */
-            text-align: center;
-        }
-
-        /*アイコンを中に入れる*/
-        .search_box input {
-            padding: 3px 0 3px 2em;
-            /* アイコンを設置するため左の余白を多めに指定*/
-        }
-
-        /*アイコンを中に入れる*/
-        .search_box::before {
-            content: "";
-            /* 疑似要素に必須 */
-            width: 30px;
-            /* アイコンの横幅 */
-            height: 16px;
-            /* アイコンの高さ */
-            background: url(bk.png) no-repeat center center / auto 100%;
-            /* 背景にアイコン画像を配置 */
-            display: inline-block;
-            /* 高さを持たせるためにインラインブロック要素にする */
-            position: absolute;
-            /* 相対位置に指定 */
-            top: 20px;
-            /* アイコンの位置。微調整してね */
-            left: 10px;
-            /* アイコンの位置。微調整してね */
-        }
-
-        /*アイコンを中に入れる*/
-        .c {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /*アイコンを中に入れる*/
-        .kadomaru {
+        /*登録ボタンについて*/
+        .button {
+            /*↓枠のサイズがfigmaでの表記がわからないので後日*/
             width: 335px;
             height: 59px;
             font-size: 12px;
@@ -123,20 +111,10 @@
             border-radius: 20px;
             margin-top: 30px;
         }
-
-        /*アイコンを中に入れる*/
-        .btn {
-            color: rgb(236, 72, 153);
-        }
     </style>
 
-
-
-
-
-
-
 </head>
+
 
 <body>
     <!----- ヘッダー ----->
@@ -149,11 +127,7 @@
             新規作成
         </div>
     </header>
-
-
-
-
-
+    <!----- ヘッダー END ----->
 
     <!----- メインコンテンツ ----->
     <div class="c">
@@ -184,7 +158,7 @@
                 </div>
             </div>
 
-            <p><input type="submit" value="登録" class="kadomaru"></p>
+            <p><input type="submit" value="登録" class="button"></p>
         </form>
     </div>
     <!----- メインコンテンツ END ----->
