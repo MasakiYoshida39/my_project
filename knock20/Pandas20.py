@@ -8,6 +8,23 @@ import pandas as pd
 df = pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 
+
+"""
+Pandas20本ノック12
+# 欠損値の場所を確認
+df1 = df.isnull
+print(df1)
+"""
+
+
+
+
+
+
+
+
+
+
 """
 Pandas20本ノック11
 # ダミー変数の処理（
