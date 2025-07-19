@@ -9,21 +9,17 @@ df = pd.read_csv('weather.csv')
 df_pe = pd.read_csv('people.csv')
 
 
+# 欠損値の補完
+df1 = df.fillna(0).head()
+print(df1)
+
+
 """
 Pandas20本ノック12
 # 欠損値の場所を確認
 df1 = df.isnull
 print(df1)
 """
-
-
-
-
-
-
-
-
-
 
 """
 Pandas20本ノック11
