@@ -10,17 +10,63 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <script src="main.js"></script>
+    <style>
+        /* ここにCSS書くよ */
+        header {
+            background-color: rgb(255, 148, 148);
+            height: 120px;
+        }
+
+
+
+        /* 戻るボタンの画像のサイズ */
+        .backbutton {
+            height: 24px;
+            width: 24px;
+        }
+
+        /*ヘッダー内の今いるページの表示について*/
+        .parent {
+            /* ベンダープレフィックスは省略 */
+            display: flex;
+            justify-content: center;
+            /* 子要素を中央揃え */
+            position: relative;
+
+        }
+
+        /*画像ボタンの配置について*/
+        .left {
+            position: absolute;
+            left: 17px;
+
+
+        }
+
+        .center {}
+    </style>
 </head>
 
 <body>
 
     <!----- ヘッダー ----->
 
-    <header>
-        <div><img src="test.png" alt="戻るボタン"></div>
-        <div>新規作成</div>
+
+    <header class="parent">
+        <div class="a">
+            <div class="left">
+                <a href="参考.html">
+                    <img src="test.png" alt="戻るボタン" class="backbutton">
+                </a>
+            </div>
+
+            <div class="center">新規作成</div>
+        </div>
     </header>
+
     <!----- ヘッダー END ----->
+
+
 
 
     <!----- メインコンテンツ ----->
