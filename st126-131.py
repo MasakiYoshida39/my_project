@@ -1,8 +1,8 @@
 
 """ コメント(4-)
 """
+
 """ コメント(4-1)
-"""
 for i in range(1, 10):
     for j in range(1, 10):
         print(i, "x", j, "=", i * j)
@@ -14,11 +14,7 @@ while i <= 9:
         print(i, "x", j, "=", i * j)
         j = j + 1
     i = i + 1
-
-
-
-
-
+"""
 
 
 
