@@ -1,6 +1,31 @@
 
 """ コメント(4-)
 """
+
+""" コメント(4-4)
+a = 0
+b = 1
+while a < 10000:
+    print(a, end=' ')
+    tmp = a
+    a = b
+    b = tmp + b
+print()
+
+
+# 【プラスα】関数として記述
+def fib(n):
+    a = 0
+    b = 1
+    while a < n:
+        print(a, end=' ')
+        tmp = a
+        a = b
+        b = tmp + b
+    print()
+
+"""
+
 """ コメント(4-2)
 h = int(input("数字を入力して下さい"))
 
