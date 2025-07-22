@@ -1,6 +1,26 @@
 
 """ コメント(4-)
 """
+""" コメント(4-2)
+h = int(input("数字を入力して下さい"))
+
+# 1行目
+for i in range(h):
+    print("*", end="")
+print()
+
+# 受取った値が1でない場合
+if h != 1:
+    for i in range(2, h):
+        print("*", end="")
+        for j in range(2, h):
+            print(" ", end="")
+        print("*")
+    # 最終行
+    for i in range(h):
+        print("*", end="")
+    print()
+""" 
 
 """ コメント(4-1)
 for i in range(1, 10):
@@ -15,10 +35,6 @@ while i <= 9:
         j = j + 1
     i = i + 1
 """
-
-
-
-
 
 """ コメント(3-3)
 print("1つ目の数字")
