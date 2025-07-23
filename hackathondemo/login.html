@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>ログイン</title>
+    <meta name="description" content="サイトキャプションを入力">
+    <meta name="keywords" content="サイトキーワードを,で区切って入力">
+    <link rel="stylesheet" href="sample.css">
+    <script src="sample.js"></script>
+    <style>
+        /*リセットCSS*/
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /*.............*/
+
+        /*ヘッダー*/
+        /*ヘッダー全体のCSS*/
+        .header {
+            height: 426px;
+            background-color: rgb(255, 245, 228);
+        }
+
+        /*たらこ様のアイコンに関してのCSS*/
+        .tarako {
+            width: 407px;
+            height: 407px
+        }
+
+        /*たらこ様を真ん中にするCSS*/
+        .center {
+            position: absolute;
+            left: 67px;
+            top: 47px
+        }
+
+        /*.............*/
+
+        /*メインCSS*/
+
+        main {
+            background-color: rgb(247, 202, 224);
+        }
+
+        .a {
+            text-indent: -300px
+        }
+
+        .textbox {
+            width: 360px;
+            padding: 11px 10px;
+            border-radius: 10px;
+            border-top: 1px solid #aaa;
+            border-left: 1px solid #aaa;
+            border-right: 2px solid #aaa;
+            border-bottom: 2px solid #aaa;
+            font-size: 16px;
+
+
+        }
+
+
+        .kadomaru {
+            width: 456px;
+            height: 50px;
+            font-size: 12px;
+            color: #FFFFFF;
+            background: linear-gradient(45deg, rgb(236, 72, 153) 35%, rgb(249, 115, 22));
+            border-radius: 20px;
+            margin-top: 50px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn {
+            color: rgb(236, 72, 153);
+        }
+
+
+
+
+        h2 {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!----- ヘッダー ----->
+
+    <header class="header">
+        <div class="center">
+            <img src="maink.png" class="tarako">
+        </div>
+    </header>
+    <!----- ヘッダー END ----->
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <div class="container">
+            <img src="titlelogo.png">
+            <h2>明太子好きのためのコミュニティ</h2>
+
+            <form action="main.html" method="post">
+                <div class="a">メールアドレス</div>
+                <input type="email" name="email" placeholder="xxxx@example.com" required class="textbox"><br>
+                <div class="a">パスワード</div>
+                <input type="password" name="password" placeholder="パスワードを入力" required class="textbox"><br>
+                <input type="submit" value="ログイン" class="kadomaru">
+            </form>
+
+            <h2>アカウントをお持ちでない方は、
+                <a href="new.html" class="btn">新規登録</a>
+            </h2>
+        </div>
+    </main>
+</body>
+
+</html>
