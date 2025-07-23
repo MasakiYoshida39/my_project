@@ -58,33 +58,45 @@ footer {
     bottom: 0;
 }
 
+/*名前変更*/
 .b {
     display: flex;
     justify-content: center;
+}
+
+/*。。。。*/
+
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: white;
 }
 
 .b:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.flex-item {
-    justify-content: flex-start;
-}
+
 
 .image1 {
     height: 57px;
-    justify-content: flex-start;
     width: 38px;
+
 }
 
 
 .image2 {
     height: 57px;
     width: 61px;
+
 }
 
 
 .image3 {
     height: 57px;
     width: 47px;
+
 }
