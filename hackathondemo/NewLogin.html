@@ -9,13 +9,21 @@
     <link rel="stylesheet" href="sample.css">
     <script src="sample.js"></script>
     <style>
+        /*リセットCSS*/
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
         /*ヘッダーCSS*/
         /*ヘッダー全体について*/
         .header-1 {
             box-sizing: border-box;
             width: 100%;
             height: 120px;
-            background-color: rgb(236, 72, 153);
+            background-color: rgb(255, 148, 148);
             position: relative;
             display: flex;
             align-items: 10px;
@@ -52,20 +60,34 @@
         }
 
 
+
+
+
+
         /*maneのCSS*/
+        main {
+            background-color: rgb(255, 245, 228);
+            height: 732px;
+        }
+
         /*入力ホーム全体のCSSについて*/
-        .c {
+        .inputform {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         /*入力欄上の文字のCSSについて*/
-        .b {
+        .inputbox {
             text-align: left;
-            /*↓間隔がfigmaでの表記がわからないので後日*/
-            margin-top: 30px;
+            margin-top: 45px;
         }
+
+        .font {
+            color: rgb(255, 148, 148);
+
+        }
+
 
         /*入力欄全体のCSSについて*/
         .search_box {
@@ -80,52 +102,105 @@
         }
 
         /*入力欄の画像の変更*/
-        /*↓を複製し画像を設定する*/
         .search_box::before {
             content: "";
-            width: 30px;
-            height: 16px;
-            /* 使用する画像によって変更 */
-            background: url(bk.png) no-repeat center center / auto 100%;
+            width: 24px;
+            height: 24px;
+            background: url(icon.png) no-repeat center center / auto 100%;
             display: inline-block;
             position: absolute;
-            /* アイコンの位置。後日微調整 */
-            top: 20px;
-            /* アイコンの位置。後日微調整 */
-            left: 10px;
+            top: 10px;
+            left: 16px;
         }
 
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+
+
+
+
+
+
+
+
+
+
+        /*入力欄全体のCSSについて*/
+        .search_box1 {
+            display: inline-block;
+            position: relative;
+            text-align: center;
         }
+
+        /*入力の画像を真ん中にするため*/
+        .search_box1 input {
+            padding: 3px 0 3px 2em;
+        }
+
+        /*入力欄の画像の変更*/
+        /*↓を複製し画像を設定する*/
+        .search_box1::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            background: url(mail.png) no-repeat center center / auto 100%;
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 16px;
+        }
+
+        /*入力欄全体のCSSについて*/
+        .search_box2 {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+        }
+
+        /*入力の画像を真ん中にするため*/
+        .search_box2 input {
+            padding: 3px 0 3px 2em;
+        }
+
+        /*入力欄の画像の変更*/
+        /*↓を複製し画像を設定する*/
+        .search_box2::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            background: url(password.png) no-repeat center center / auto 100%;
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 16px;
+        }
+
+
+
 
         /*入力欄の枠について*/
         .textbox {
             /*↓枠のサイズがfigmaでの表記がわからないので後日*/
-            width: 300px;
-            height: 50px;
+            width: 265px;
+            height: 41px;
             border-radius: 10px;
-            border-top: 1px solid #aaa;
-            border-left: 1px solid #aaa;
-            border-right: 2px solid #aaa;
-            border-bottom: 2px solid #aaa;
+            border-top: 1px solid rgb(255, 148, 148);
+            border-left: 1px solid rgb(255, 148, 148);
+            border-right: 2px solid rgb(255, 148, 148);
+            border-bottom: 2px solid rgb(255, 148, 148);
             font-size: 16px;
+
+
         }
 
         /*登録ボタンについて*/
         .button {
-            /*↓枠のサイズがfigmaでの表記がわからないので後日*/
-            width: 335px;
-            height: 59px;
-            font-size: 12px;
+            width: 300px;
+            height: 50px;
+            font-size: 16px;
             color: #FFFFFF;
-            background: rgb(236, 72, 153);
-            background: linear-gradient(45deg, rgb(236, 72, 153) 35%, rgb(249, 115, 22));
+            background: rgb(255, 148, 148);
             border-radius: 20px;
             margin-top: 30px;
+            border: none;
         }
     </style>
 
@@ -145,39 +220,62 @@
     </header>
     <!----- ヘッダー END ----->
 
+
+
+
+
+
     <!----- メインコンテンツ ----->
-    <div class="c">
-        <form action="main.html" method="post">
-            <div class="b">名前<br>
-                <div class="search_box">
-                    <input type="text" name="name" value="" placeholder="mentaiko" class="textbox">
+    <main>
+        <div class="inputform">
+            <form action="main.html" method="post">
+                <div class="inputbox">
+                    <div class="font">
+                        ユーザー名
+                    </div>
+                    <div class="search_box">
+                        <input type="text" name="name" value="" class="textbox">
+                    </div>
                 </div>
-            </div>
 
-            <div class="b">メールアドレス<br>
-                <div class="search_box">
-                    <input type="email" name="email-address" value="" placeholder="xxxx@example.com"
-                        class="textbox"><br>
-                </div>
-            </div>
+                <div class="inputbox">
+                    <div class="font">
+                        メールアドレス
+                    </div>
 
-            <!----- タイプ何？ ----->
-            <div class="b">パスワード<br>
-                <div class="search_box">
-                    <input type="text" name="mail" value="" placeholder="画像にする" class="textbox">
-                </div>
-            </div>
+                    <div class="search_box1">
+                        <input type="email" name="email-address" value="" placeholder="   xxxx@example.com"
+                            class="textbox"><br>
+                    </div>
 
-            <div class="b">パスワード（確認）<br>
-                <div class="search_box">
-                    <input type="text" name="mail" value="" placeholder="画像にする" class="textbox">
-                </div>
-            </div>
 
-            <p><input type="submit" value="登録" class="button"></p>
-        </form>
-    </div>
+                    <!----- タイプ何？ ----->
+                    <div class="inputbox">
+                        <div class="font">
+                            パスワード
+                        </div>
+                        <div class="search_box2">
+                            <input type="text" name="mail" value="" class="textbox">
+                        </div>
+                    </div>
+
+                    <div class="inputbox">
+                        <div class="font">
+                            パスワード（確認）
+                        </div>
+                        <div class="search_box2">
+                            <input type="text" name="mail" value="" class="textbox">
+                        </div>
+                    </div>
+
+                    <p><input type="submit" value="登録" class="button"></p>
+            </form>
+        </div>
+    </main>
     <!----- メインコンテンツ END ----->
+    <footer>
+
+    </footer>
 
 </body>
 
