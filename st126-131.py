@@ -2,6 +2,60 @@
 """ コメント(5-)
 """
 
+""" コメント(5-3)
+# 🔧 マージソートの関数
+def merge_sort(data):
+    # 要素が1個以下ならそのまま返す（並び替え不要）
+    if len(data) <= 1:
+        return data
+
+    # 中心で分割
+    center_idx = len(data) // 2
+    left_data = data[:center_idx]
+    right_data = data[center_idx:]
+
+    # 👇 修正：再帰的にソートした結果を受け取る
+    left_data = merge_sort(left_data)
+    right_data = merge_sort(right_data)
+
+    # マージして1つのリストにまとめる
+    left_idx = right_idx = idx = 0
+
+    # 新しいリスト用の空リストを作る
+    sorted_data = [0] * len(data)
+
+    # 左右のリストを比較して小さい方から入れていく
+    while left_idx < len(left_data) and right_idx < len(right_data):
+        if left_data[left_idx] <= right_data[right_idx]:
+            sorted_data[idx] = left_data[left_idx]
+            left_idx += 1
+        else:
+            sorted_data[idx] = right_data[right_idx]
+            right_idx += 1
+        idx += 1
+
+    # 残りの要素を追加（どちらか一方にしか残ってない）
+    while left_idx < len(left_data):
+        sorted_data[idx] = left_data[left_idx]
+        left_idx += 1
+        idx += 1
+
+    while right_idx < len(right_data):
+        sorted_data[idx] = right_data[right_idx]
+        right_idx += 1
+        idx += 1
+
+    return sorted_data
+
+# 📦 ソートするデータ
+data = [6, 15, 4, 2, 8, 5, 11, 9, 7, 13]
+
+# 🧪 ソート実行（元のリストは壊さないようにコピー）
+sorted_data = merge_sort(data.copy())
+
+# 🖨 結果を表示
+print(f"{data} => {sorted_data}")
+"""
 
 """ コメント(5-２)
 # 🌟 バブルソート関数を作るよ！
