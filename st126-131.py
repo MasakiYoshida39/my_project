@@ -1,6 +1,37 @@
 
 """ コメント(5-)
 """
+
+
+""" コメント(5-２)
+# 🌟 バブルソート関数を作るよ！
+def bubble_sort(data):
+    # データが1個以下なら、もう並べる必要なし！
+    if len(data) <= 1:
+        return data
+
+    # リストの中を何回もチェック（最大でn-1回）
+    for i in range(len(data) - 1):
+        # 左から順に、となり同士を比べる
+        for j in range(len(data) - i - 1):
+            # もし左の方が大きかったら、入れかえる！
+            if data[j] > data[j + 1]:
+                # Pythonの入れかえテク：左右を一気に入れかえ！
+                data[j], data[j + 1] = data[j + 1], data[j]
+    
+    # 並び終わったら返すよ！
+    return data
+
+# 🔢 並べたいデータ
+data = [6, 15, 4, 2, 8, 5, 11, 9, 7, 13]
+
+# 📦 元のデータはそのまま残して、コピーを並べる
+sorted_data = bubble_sort(data.copy())
+
+# 🖨 結果を表示！
+print(f"{data} => {sorted_data}")
+"""
+
 """ コメント(5-1)
 num1 = int(input("1つ目の数字を入力して下さい"))
 num2 = int(input("2つ目の数字を入力して下さい"))
