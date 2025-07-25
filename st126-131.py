@@ -1,6 +1,29 @@
 
-""" コメント(4-)
+""" コメント(5-)
 """
+
+""" コメント(5-1)
+num1 = int(input("1つ目の数字を入力して下さい"))
+num2 = int(input("2つ目の数字を入力して下さい"))
+
+if num1 <= 1 or num2 <= 1:
+    print(False)
+else:
+    for i in range(2, (num1 // 2) + 1):
+        if num1 % i == 0:
+            print(False)
+            break
+    else:
+        for i in range(2, (num2 // 2) + 1):
+            if num2 % i == 0:
+                print(False)
+                break
+        else:
+            print(True)
+"""
+
+
+
 
 """ コメント(4-4)
 a = 0
