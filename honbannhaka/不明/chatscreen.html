@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>全体チャット</title>
+    <link rel="stylesheet" href="chatscreen.css" />
+</head>
+
+<body>
+    <!----- ヘッダー ----->
+    <header>
+        <!-- チャット名はバックエンドと繋ぐ必要があるのでは？ -->
+        <h1>全体チャット</h1>
+        <!-- chatlistが同じファイル内にないため行かない -->
+        <a href="chatlist.html" class="backbutton">
+            <img src="left.png" alt="Parrots" class="headerimage" />
+        </a>
+    </header>
+    <!----- ヘッダーEND ----->
+
+
+
+
+    <!-- メイン -->
+    <main>
+
+        <!--メッセージ（左側）-->
+        <div class="message left">
+            <div class="message_box">
+                <div class="message_content">
+                    <div class="message_text">博多の明太子専門店で新商品を発見！辛さが絶妙でした🌶️</div>
+                </div>
+            </div>
+        </div>
+
+        <!--メッセージ（右側）-->
+        <div class="message right">
+            <div class="message_box">
+                <div class="message_content">
+                    <div class="message_text">それ気になります！お店の名前教えてください✨</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- メインEND -->
+
+
+
+    <!-- フッター -->
+    <footer>
+
+        <!-- テキストボックス 送信ボタン -->
+        <textarea id="footer_message"></textarea>
+        <input type="image" name="sendbutton" src="sendbutton.png" class="sendbutton">
+        </div>
+    </footer>
+    <!-- フッターEND -->
+
+
+
+</body>
+
+</html>
