@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>新規登録</title>
-    <meta name="description" content="サイトキャプションを入力">
-    <meta name="keywords" content="サイトキーワードを,で区切って入力">
-    <link rel="stylesheet" href="sample.css">
-    <script src="sample.js"></script>
+    <!----- header.cssを統一する為変更----->
+    <link rel="stylesheet" href="../CSS/header.css" />
     <style>
         /*リセットCSS*/
         html,
@@ -17,47 +16,7 @@
             font-family: Arial, sans-serif;
         }
 
-        /*ヘッダーCSS*/
-        /*ヘッダー全体について*/
-        .header-1 {
-            box-sizing: border-box;
-            width: 100%;
-            height: 120px;
-            background-color: rgb(255, 148, 148);
-            position: relative;
-            display: flex;
-            align-items: 10px;
-            justify-content: center;
 
-        }
-
-        /*画像ボタンの配置について*/
-        .backbutton {
-            position: absolute;
-            left: 17px;
-            margin-top: 75px;
-
-        }
-
-        /*画像ボタンの画像サイズについて*/
-        .image {
-            height: 24px;
-            width: 24px;
-        }
-
-        .title {
-            color: white;
-            font-size: 18px;
-
-        }
-
-        /*ヘッダー内の今いるページの表示について*/
-        .header-inner {
-            display: flex;
-            justify-content: center;
-            height: 60px;
-            margin-top: 75px;
-        }
 
 
 
@@ -211,14 +170,12 @@
 <body>
     <!----- ヘッダー ----->
 
-    <header class="header-1">
-        <a href="top.html" class="backbutton">
-
-            <img src="../images/left.png" alt="Parrots" class="image">
+    <header>
+        <h1>新規作成</h1>
+        <a href="chatlist.html" class="backbutton">
+            <!-- ファイル統一の為変更 -->
+            <img src="../images/left.png" alt="Parrots" class="headerimage" />
         </a>
-        <div class="header-inner">
-            <div class="title">新規作成</div>
-        </div>
     </header>
     <!----- ヘッダー END ----->
 
