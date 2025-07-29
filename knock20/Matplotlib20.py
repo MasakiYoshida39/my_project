@@ -5,16 +5,25 @@ Matplotlib20本ノック
 import numpy as np                  # 数値計算ライブラリNumPyをnpとしてインポート
 import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlibのpyplotモジュールをpltとしてインポート
 
-# x軸のラベル（名前のリスト）
-x = ['sam', 'john', 'kevin', 'adam']
+# xに0〜9の連続した整数を生成
+x = np.arange(10)
 
-# 0以上200未満の整数を4つランダムに生成（各人の値として使用）
-y = np.random.randint(0, 200, 4)
+# yに-10以上10未満の整数を10個ランダムに生成
+y = np.random.randint(-10, 10, 10)
 
-# 棒グラフを描画（xが名前、yが値）
-plt.bar(x, y)
+# 折れ線グラフを描画
+plt.plot(x, y)
 
-# グラフを画面に表示
+# グラフのタイトルを設定
+plt.title('Res')
+
+# x軸のラベルを設定
+plt.xlabel('x axis')
+
+# y軸のラベルを設定
+plt.ylabel('y axis')
+
+# グラフを表示（これより後にラベル設定しても反映されない）
 plt.show()
 
 
@@ -74,5 +83,20 @@ Matplotlib20本ノック3(についてbins)
 plt.hist(date, bins=15)
 
 # 新しいグラフを画面に表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック4
+# x軸のラベル（名前のリスト）
+x = ['sam', 'john', 'kevin', 'adam']
+
+# 0以上200未満の整数を4つランダムに生成（各人の値として使用）
+y = np.random.randint(0, 200, 4)
+
+# 棒グラフを描画（xが名前、yが値）
+plt.bar(x, y)
+
+# グラフを画面に表示
 plt.show()
 """
