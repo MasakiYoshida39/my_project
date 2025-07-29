@@ -6,6 +6,27 @@ import numpy as np                  # 数値計算ライブラリNumPyをnpと�
 import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlibのpyplotモジュールをpltとしてインポート
 
 """
+Matplotlib20本ノック3
+# 0以上10未満の整数を10個ランダムに生成（データ配列）
+date = np.random.randint(0, 10, 10)
+
+# 生成したデータを使ってヒストグラム（度数分布図）を描画
+plt.hist(date)
+
+# グラフを画面に表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック3(についてbins)
+# データのヒストグラムをビンの数を15に指定して描画（ビン＝棒の数）
+plt.hist(date, bins=15)
+
+# 新しいグラフを画面に表示
+plt.show()
+"""
+
+"""
 Matplotlib20本ノック１
 # xの値を0から9までの整数の配列として作成
 x = np.arange(10)
