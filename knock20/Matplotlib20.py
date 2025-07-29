@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlib�
 
 
 
-
 """
 Matplotlib20本ノック１
 # xの値を0から9までの整数の配列として作成
@@ -150,5 +149,34 @@ plt.yscale('log')
 plt.plot(x, y)
 
 # グラフを表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック8
+# 0〜2πまでを500等分した配列を生成（x軸の値）
+x = np.linspace(0, 2 * np.pi, 500)
+
+# sin(x) の値を計算（y1に格納）
+y1 = np.sin(x)
+
+# cos(x) の値を計算（y2に格納）
+y2 = np.cos(x)
+
+# sin(x) の折れ線グラフを描画（ラベル付き）
+plt.plot(x, y1, label='sin')
+
+# cos(x) の折れ線グラフを描画（ラベル付き）
+plt.plot(x, y2, label='cos')
+
+# y軸の範囲を -2〜2 に設定
+plt.ylim(-2, 2)
+
+# 凡例を表示（labelで設定した内容）
+# loc=2 は「左上（upper left）」を意味する
+plt.legend(loc=2)
+
+
+# グラフを画面に表示
 plt.show()
 """
