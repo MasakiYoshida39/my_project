@@ -5,30 +5,6 @@ Matplotlib20本ノック
 import numpy as np                  # 数値計算ライブラリNumPyをnpとしてインポート
 import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlibのpyplotモジュールをpltとしてインポート
 
-# 10以上20未満の整数を20個ランダム生成（x1のデータ）
-x1 = np.random.randint(10, 20, 20)
-# 20以上30未満の整数を20個ランダム生成（x2のデータ）
-x2 = np.random.randint(20, 30, 20)
-# ここが問題！50以上10未満の整数を20個ランダム生成しようとしているためエラーまたは空の配列になる
-# y1 = np.random.randint(50, 10, 20)  ← 上限値が下限値より小さいので正しく動作しない
-# 正しくは下限＜上限に直す必要あり（例: 10以上50未満）
-y1 = np.random.randint(10, 50, 20)
-# 0以上40未満の整数を20個ランダム生成（y2のデータ）
-y2 = np.random.randint(0, 40, 20)
-
-# x1,y1の点を散布図で描画
-plt.scatter(x1, y1)
-# x2,y2の点を散布図で描画
-plt.scatter(x2, y2)
-
-# x軸の表示範囲を0〜40に設定
-plt.xlim(0, 40)
-
-# y軸の表示範囲を0〜40に設定
-plt.ylim(0, 40)
-
-# グラフを画面に表示
-plt.show()
 
 
 
@@ -127,5 +103,52 @@ plt.xlabel('x axis')
 plt.ylabel('y axis')
 
 # グラフを表示（これより後にラベル設定しても反映されない）
+plt.show()
+"""
+
+
+"""
+Matplotlib20本ノック6
+# 10以上20未満の整数を20個ランダム生成（x1のデータ）
+x1 = np.random.randint(10, 20, 20)
+# 20以上30未満の整数を20個ランダム生成（x2のデータ）
+x2 = np.random.randint(20, 30, 20)
+# ここが問題！50以上10未満の整数を20個ランダム生成しようとしているためエラーまたは空の配列になる
+# y1 = np.random.randint(50, 10, 20)  ← 上限値が下限値より小さいので正しく動作しない
+# 正しくは下限＜上限に直す必要あり（例: 10以上50未満）
+y1 = np.random.randint(10, 50, 20)
+# 0以上40未満の整数を20個ランダム生成（y2のデータ）
+y2 = np.random.randint(0, 40, 20)
+
+# x1,y1の点を散布図で描画
+plt.scatter(x1, y1)
+# x2,y2の点を散布図で描画
+plt.scatter(x2, y2)
+
+# x軸の表示範囲を0〜40に設定
+plt.xlim(0, 40)
+
+# y軸の表示範囲を0〜40に設定
+plt.ylim(0, 40)
+
+# グラフを画面に表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック7
+# 0から10までを500分割したxの配列を生成
+x = np.linspace(0, 10, 500)
+
+# y = e^x の値を計算（指数関数）
+y = np.exp(x)
+
+# y軸を対数スケールに設定（ログスケール）
+plt.yscale('log')
+
+# 折れ線グラフを描画
+plt.plot(x, y)
+
+# グラフを表示
 plt.show()
 """
