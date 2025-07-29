@@ -5,26 +5,31 @@ Matplotlib20本ノック
 import numpy as np                  # 数値計算ライブラリNumPyをnpとしてインポート
 import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlibのpyplotモジュールをpltとしてインポート
 
-# xに0〜9の連続した整数を生成
-x = np.arange(10)
+# 10以上20未満の整数を20個ランダム生成（x1のデータ）
+x1 = np.random.randint(10, 20, 20)
+# 20以上30未満の整数を20個ランダム生成（x2のデータ）
+x2 = np.random.randint(20, 30, 20)
+# ここが問題！50以上10未満の整数を20個ランダム生成しようとしているためエラーまたは空の配列になる
+# y1 = np.random.randint(50, 10, 20)  ← 上限値が下限値より小さいので正しく動作しない
+# 正しくは下限＜上限に直す必要あり（例: 10以上50未満）
+y1 = np.random.randint(10, 50, 20)
+# 0以上40未満の整数を20個ランダム生成（y2のデータ）
+y2 = np.random.randint(0, 40, 20)
 
-# yに-10以上10未満の整数を10個ランダムに生成
-y = np.random.randint(-10, 10, 10)
+# x1,y1の点を散布図で描画
+plt.scatter(x1, y1)
+# x2,y2の点を散布図で描画
+plt.scatter(x2, y2)
 
-# 折れ線グラフを描画
-plt.plot(x, y)
+# x軸の表示範囲を0〜40に設定
+plt.xlim(0, 40)
 
-# グラフのタイトルを設定
-plt.title('Res')
+# y軸の表示範囲を0〜40に設定
+plt.ylim(0, 40)
 
-# x軸のラベルを設定
-plt.xlabel('x axis')
-
-# y軸のラベルを設定
-plt.ylabel('y axis')
-
-# グラフを表示（これより後にラベル設定しても反映されない）
+# グラフを画面に表示
 plt.show()
+
 
 
 """
@@ -98,5 +103,29 @@ y = np.random.randint(0, 200, 4)
 plt.bar(x, y)
 
 # グラフを画面に表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック5
+# xに0〜9の連続した整数を生成
+x = np.arange(10)
+
+# yに-10以上10未満の整数を10個ランダムに生成
+y = np.random.randint(-10, 10, 10)
+
+# 折れ線グラフを描画
+plt.plot(x, y)
+
+# グラフのタイトルを設定
+plt.title('Res')
+
+# x軸のラベルを設定
+plt.xlabel('x axis')
+
+# y軸のラベルを設定
+plt.ylabel('y axis')
+
+# グラフを表示（これより後にラベル設定しても反映されない）
 plt.show()
 """
