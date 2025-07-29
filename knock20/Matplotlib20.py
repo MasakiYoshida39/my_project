@@ -5,26 +5,18 @@ Matplotlib20本ノック
 import numpy as np                  # 数値計算ライブラリNumPyをnpとしてインポート
 import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlibのpyplotモジュールをpltとしてインポート
 
-"""
-Matplotlib20本ノック3
-# 0以上10未満の整数を10個ランダムに生成（データ配列）
-date = np.random.randint(0, 10, 10)
+# x軸のラベル（名前のリスト）
+x = ['sam', 'john', 'kevin', 'adam']
 
-# 生成したデータを使ってヒストグラム（度数分布図）を描画
-plt.hist(date)
+# 0以上200未満の整数を4つランダムに生成（各人の値として使用）
+y = np.random.randint(0, 200, 4)
+
+# 棒グラフを描画（xが名前、yが値）
+plt.bar(x, y)
 
 # グラフを画面に表示
 plt.show()
-"""
 
-"""
-Matplotlib20本ノック3(についてbins)
-# データのヒストグラムをビンの数を15に指定して描画（ビン＝棒の数）
-plt.hist(date, bins=15)
-
-# 新しいグラフを画面に表示
-plt.show()
-"""
 
 """
 Matplotlib20本ノック１
@@ -60,5 +52,27 @@ plt.scatter(x1, y1)
 plt.scatter(x2, y2)
 
 # グラフを画面に表示
+plt.show()
+"""
+
+
+"""
+Matplotlib20本ノック3
+# 0以上10未満の整数を10個ランダムに生成（データ配列）
+date = np.random.randint(0, 10, 10)
+
+# 生成したデータを使ってヒストグラム（度数分布図）を描画
+plt.hist(date)
+
+# グラフを画面に表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック3(についてbins)
+# データのヒストグラムをビンの数を15に指定して描画（ビン＝棒の数）
+plt.hist(date, bins=15)
+
+# 新しいグラフを画面に表示
 plt.show()
 """
