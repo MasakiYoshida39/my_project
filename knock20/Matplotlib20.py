@@ -7,6 +7,13 @@ import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlib�
 
 
 
+
+
+
+
+
+
+
 """
 Matplotlib20本ノック１
 # xの値を0から9までの整数の配列として作成
@@ -212,6 +219,27 @@ date = [5, 3, 4, 3, 5, 0, 3, 2, 1, 4, 6, 8]
 
 # プロット
 plt.plot(date)
+
+# 注釈（最小値をマーク）
+plt.annotate('min value',
+             xy=(5, 0),              # 最小値の位置
+             xytext=(9, 0.5),        # 注釈のテキスト位置
+             arrowprops=dict(facecolor='black', shrink=0.05))
+
+# グラフ表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック11
+date = [5, 3, 4, 3, 5, 0, 3, 2, 1, 4, 6, 8]
+
+# プロット
+plt.plot(date)
+
+# 軸の目盛りを明示的に指定
+plt.xticks(np.arange(12))
+plt.yticks(np.arange(0, 10, 2))
 
 # 注釈（最小値をマーク）
 plt.annotate('min value',
