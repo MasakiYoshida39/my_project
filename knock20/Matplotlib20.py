@@ -5,9 +5,20 @@ Matplotlib20本ノック
 import numpy as np                  # 数値計算ライブラリNumPyをnpとしてインポート
 import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlibのpyplotモジュールをpltとしてインポート
 
+# データ
+date = [5, 3, 4, 3, 5, 0, 3, 2, 1, 4, 6, 8]
 
+# プロット
+plt.plot(date)
 
+# 注釈（最小値をマーク）
+plt.annotate('min value',
+             xy=(5, 0),              # 最小値の位置
+             xytext=(9, 0.5),        # 注釈のテキスト位置
+             arrowprops=dict(facecolor='black', shrink=0.05))
 
+# グラフ表示
+plt.show()
 
 """
 Matplotlib20本ノック１
