@@ -9,11 +9,6 @@ import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlib�
 
 
 
-
-
-
-
-
 """
 Matplotlib20本ノック１
 # xの値を0から9までの整数の配列として作成
@@ -271,3 +266,31 @@ plt.annotate('min value',
 # グラフ表示
 plt.show()
 """
+
+"""
+Matplotlib20本ノック13
+names = ['san', 'jon', 'bob', 'tom']
+values = [21, 170, 10, 120]
+
+# 図全体のサイズを指定（横9インチ、縦3インチ）
+plt.figure(figsize=(9, 3))  # ← 修正済み
+
+# 1つ目：棒グラフ
+plt.subplot(131)
+plt.bar(names, values)
+plt.title("Bar Chart")
+
+# 2つ目：散布図
+plt.subplot(132)
+plt.scatter(names, values)
+plt.title("Scatter Plot")
+
+# 3つ目：折れ線グラフ
+plt.subplot(133)
+plt.plot(names, values)
+plt.title("Line Plot")
+
+plt.show()
+
+"""
+
