@@ -294,3 +294,17 @@ plt.show()
 
 """
 
+"""
+Matplotlib20本ノック14
+# 10x10のランダムな行列を生成
+date = np.random.rand(10, 10)
+
+# ヒートマップを表示
+plt.imshow(date, vmin=0, vmax=1, cmap='Blues')
+
+# カラーバーを表示
+plt.colorbar()
+
+# グラフを表示
+plt.show()
+"""
