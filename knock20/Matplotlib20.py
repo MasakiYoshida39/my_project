@@ -250,3 +250,24 @@ plt.annotate('min value',
 # グラフ表示
 plt.show()
 """
+
+"""
+Matplotlib20本ノック12
+# データ
+date = [5, 3, 4, 3, 5, 0, 3, 2, 1, 4, 6, 8]
+
+# プロット
+plt.plot(date)
+
+# グリッド線を表示
+plt.grid(True)
+
+# 注釈（最小値をマーク）
+plt.annotate('min value',
+             xy=(5, 0),              # 最小値の位置
+             xytext=(9, 0.5),        # 注釈のテキスト位置
+             arrowprops=dict(facecolor='black', shrink=0.05))
+
+# グラフ表示
+plt.show()
+"""
