@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../CSS/reset.css" />
     <!----- main-button.cssを統一する為変更----->
     <link rel="stylesheet" href="../CSS/main-button.css" />
+    <!----- input-form.cssを統一する為変更----->
+    <link rel="stylesheet" href="../CSS/loguin/input-form.css" />
     <style>
         /*ヘッダー*/
         /*ヘッダー全体のCSS*/
@@ -53,88 +55,6 @@
             padding-top: 40px;
         }
 
-        /*入力ホーム全体のCSSについて*/
-        .inputform {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /*入力欄のCSSについて*/
-        .inputbox {
-            text-align: left;
-            margin-top: 12px;
-        }
-
-        /*入力欄上の文字のCSSについて*/
-        .font {
-            color: rgb(255, 148, 148);
-
-        }
-
-        /*入力欄全体のCSSについて*/
-        .search_box1 {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-        }
-
-        /*入力の画像を真ん中にするため*/
-        .search_box1 input {
-            padding: 3px 0 3px 2em;
-        }
-
-        /*入力欄の画像の変更*/
-        /*↓を複製し画像を設定する*/
-        .search_box1::before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            background: url(../images/mail.png) no-repeat center center / auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-        }
-
-        /*入力欄全体のCSSについて*/
-        .search_box2 {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-        }
-
-        /*入力の画像を真ん中にするため*/
-        .search_box2 input {
-            padding: 3px 0 3px 2em;
-        }
-
-        /*入力欄の画像の変更*/
-        /*↓を複製し画像を設定する*/
-        .search_box2::before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            background: url(../images/password.png) no-repeat center center / auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-        }
-
-        /*入力欄の枠について*/
-        .textbox {
-            /*↓枠のサイズがfigmaでの表記がわからないので後日*/
-            width: 265px;
-            height: 41px;
-            border-radius: 10px;
-            border-top: 1px solid rgb(255, 148, 148);
-            border-left: 1px solid rgb(255, 148, 148);
-            border-right: 2px solid rgb(255, 148, 148);
-            border-bottom: 2px solid rgb(255, 148, 148);
-            font-size: 16px;
-
-        }
 
 
 
@@ -185,24 +105,24 @@
 
 
 
-            <div class="inputform">
+            <div class="input-form">
                 <form action="main.html" method="post">
 
-                    <div class="inputbox">
+                    <div class="input-box-login">
                         <div class="font">
                             メールアドレス
                         </div>
 
-                        <div class="search_box1">
+                        <div class="search_box">
                             <input type="email" name="email-address" value="" placeholder="   xxxx@example.com"
                                 class="textbox"><br>
                         </div>
 
-                        <div class="inputbox">
+                        <div class="input-box-login">
                             <div class="font">
                                 パスワード
                             </div>
-                            <div class="search_box2">
+                            <div class="search_box1">
                                 <input type="password" name="mail" value="" class="textbox">
                             </div>
                         </div>
