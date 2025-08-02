@@ -22,7 +22,7 @@ footer {
 
 }
 
-.footer_item {
+.footer-item {
 
     /* 横に画像3つ、各画像下にテキストを表示する配置設定 */
     display: flex;
@@ -31,14 +31,14 @@ footer {
 
 }
 
-.footerbutton {
+.footer-button {
 
     /* 文字したの線除去 */
     text-decoration: none;
 
 }
 
-.footerimage {
+.footer-image {
 
     height: 60px;
     width: 60px;

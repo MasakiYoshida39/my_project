@@ -24,19 +24,19 @@
 
 
  /*入力欄全体のCSSについて*/
- .search_box {
+ .search-box {
      display: inline-block;
      position: relative;
      text-align: center;
  }
 
  /*入力の画像を真ん中にするため*/
- .search_box input {
+ .search-box input {
      padding: 3px 0 3px 2em;
  }
 
  /*入力欄の画像の変更*/
- .search_box::before {
+ .search-box::before {
      content: "";
      width: 24px;
      height: 24px;
@@ -48,20 +48,20 @@
  }
 
  /*入力欄全体のCSSについて*/
- .search_box1 {
+ .search-box1 {
      display: inline-block;
      position: relative;
      text-align: center;
  }
 
  /*入力の画像を真ん中にするため*/
- .search_box1 input {
+ .search-box1 input {
      padding: 3px 0 3px 2em;
  }
 
  /*入力欄の画像の変更*/
  /*↓を複製し画像を設定する*/
- .search_box1::before {
+ .search-box1::before {
      content: "";
      width: 24px;
      height: 24px;
@@ -73,20 +73,20 @@
  }
 
  /*入力欄全体のCSSについて*/
- .search_box2 {
+ .search-box2 {
      display: inline-block;
      position: relative;
      text-align: center;
  }
 
  /*入力の画像を真ん中にするため*/
- .search_box2 input {
+ .search-box2 input {
      padding: 3px 0 3px 2em;
  }
 
  /*入力欄の画像の変更*/
  /*↓を複製し画像を設定する*/
- .search_box2::before {
+ .search-box2::before {
      content: "";
      width: 24px;
      height: 24px;
@@ -101,7 +101,7 @@
 
 
  /*入力欄の枠について*/
- .textbox {
+ .text-box {
      /*↓枠のサイズがfigmaでの表記がわからないので後日*/
      width: 265px;
      height: 41px;

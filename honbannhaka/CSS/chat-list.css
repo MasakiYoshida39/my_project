@@ -20,7 +20,7 @@ h3 {
     font-size: 14px;
 }
 
-.message_box {
+.message-box {
 
     /*上下の吹き出しの隙間*/
     margin-top: 16px;
@@ -33,7 +33,7 @@ h3 {
 }
 
 
-.message_content {
+.message-content {
 
     /* 文字を真ん中に表示 */
     padding: 20px;
@@ -41,7 +41,7 @@ h3 {
 }
 
 
-.left .message_box {
+.left .message-box {
 
     /*左寄せ*/
     float: left;
@@ -57,7 +57,7 @@ h3 {
 }
 
 /* メッセージ（右側） */
-.right .message_box {
+.right .message-box {
 
     /*右寄せ*/
     float: right;
@@ -91,7 +91,7 @@ main {
 
 }
 
-.inputbox {
+.input-box {
 
     /* 矢印上の余白指定 */
     margin-top: 45px;
@@ -102,7 +102,7 @@ main {
     border-radius: 12px;
 }
 
-.chatname {
+.chat-name {
 
     width: 320px;
     height: 50px;
@@ -139,7 +139,7 @@ main {
 
 /* メインEND */
 
-#footer_message {
+#footer-message {
 
     /*常に送信ボタンの横幅を引いたサイズに動的に計算するやつ*/
     width: calc(100% - 75px);
@@ -161,7 +161,7 @@ main {
 
 }
 
-.sendbutton {
+.send-button {
     /* 送信ボタンサイズ指定 */
     width: 48px;
     height: 48px;

@@ -26,7 +26,7 @@ h1 {
 }
 
 /*「矢印」*/
-.backbutton {
+.back-button {
 
     position: absolute;
     left: 17px;
@@ -36,7 +36,7 @@ h1 {
 
 }
 
-.headerimage {
+.header-image {
 
     height: 24px;
     width: 24px;

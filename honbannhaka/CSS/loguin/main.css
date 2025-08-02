@@ -39,7 +39,7 @@ main {
 }
 
 /*タイトルロゴのサイズ変更*/
-.titlelogo {
+.title-logo {
     width: 276px;
     height: 62px;
     padding-top: 40px;
