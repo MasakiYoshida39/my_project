@@ -8,6 +8,8 @@ main {
 .main-login {
     background-color: rgb(247, 202, 224);
 
+
+
 }
 
 /*ヘッダー*/
@@ -15,12 +17,10 @@ main {
 .header {
     width: 100%;
     /* 幅を明示的に全体に */
-    height: 400px;
+    height: 409px;
     background-color: rgb(255, 245, 228);
-    border-bottom-left-radius: 50px;
-    /* 下左角を丸める */
-    border-bottom-right-radius: 50px;
-    /* 下右角を丸める */
+    border-bottom-left-radius: 100% 190px;
+    border-bottom-right-radius: 100% 190px;
 
 }
 
@@ -37,7 +37,7 @@ main {
 .center {
     position: relative;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 /*.............*/

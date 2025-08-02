@@ -1,0 +1,509 @@
+ /*入力ホーム全体のCSSについて*/
+ .input-form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /*入力欄のCSSについて*/
+ .input-box-autu {
+     text-align: left;
+     margin-top: 45px;
+ }
+
+ .input-box-login {
+     text-align: left;
+     margin-top: 12px;
+ }
+
+ /*入力欄上の文字のCSSについて*/
+ .font {
+     color: rgb(255, 148, 148);
+
+ }
+
+
+ /*入力欄全体のCSSについて*/
+ .search-box {
+     display: inline-block;
+     position: relative;
+     text-align: center;
+ }
+
+ /*入力の画像を真ん中にするため*/
+ .search-box input {
+     padding: 3px 0 3px 2em;
+ }
+
+ /*入力欄の画像の変更*/
+ .search-box::before {
+     content: "";
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icon.png) no-repeat center center / auto 100%;
+     display: inline-block;
+     position: absolute;
+     top: 10px;
+     left: 16px;
+ }
+
+ /*入力欄全体のCSSについて*/
+ .search-box1 {
+     display: inline-block;
+     position: relative;
+     text-align: center;
+ }
+
+ /*入力の画像を真ん中にするため*/
+ .search-box1 input {
+     padding: 3px 0 3px 2em;
+ }
+
+ /*入力欄の画像の変更*/
+ /*↓を複製し画像を設定する*/
+ .search-box1::before {
+     content: "";
+     width: 24px;
+     height: 24px;
+     background: url(../../images/mail.png) no-repeat center center / auto 100%;
+     display: inline-block;
+     position: absolute;
+     top: 10px;
+     left: 16px;
+ }
+
+ /*入力欄全体のCSSについて*/
+ .search-box2 {
+     display: inline-block;
+     position: relative;
+     text-align: center;
+ }
+
+ /*入力の画像を真ん中にするため*/
+ .search-box2 input {
+     padding: 3px 0 3px 2em;
+ }
+
+ /*入力欄の画像の変更*/
+ /*↓を複製し画像を設定する*/
+ .search-box2::before {
+     content: "";
+     width: 24px;
+     height: 24px;
+     background: url(../../images/password.png) no-repeat center center / auto 100%;
+     display: inline-block;
+     position: absolute;
+     top: 10px;
+     left: 16px;
+ }
+
+
+
+
+ /*入力欄の枠について*/
+ .text-box {
+     /*↓枠のサイズがfigmaでの表記がわからないので後日*/
+     width: 265px;
+     height: 41px;
+     border-radius: 10px;
+     border-top: 1px solid rgb(255, 148, 148);
+     border-left: 1px solid rgb(255, 148, 148);
+     border-right: 2px solid rgb(255, 148, 148);
+     border-bottom: 2px solid rgb(255, 148, 148);
+     font-size: 16px;
+
+
+ }
+
+
+ /*メインCSS*/
+ .main {
+     background-color: rgb(255, 245, 228);
+     height: 732px;
+
+ }
+
+ .main-login {
+     background-color: rgb(247, 202, 224);
+
+
+
+ }
+
+ /*ヘッダー*/
+ /*ヘッダー全体のCSS*/
+ .header-login {
+     width: 100%;
+     /* 幅を明示的に全体に */
+     height: 409px;
+     background-color: rgb(255, 245, 228);
+     border-bottom-left-radius: 100% 190px;
+     border-bottom-right-radius: 100% 190px;
+
+ }
+
+
+
+ /*たらこ様のアイコンに関してのCSS*/
+ .tarako {
+     width: 407px;
+     height: 407px;
+ }
+
+
+ /*たらこ様を真ん中にするCSS*/
+ .center {
+     position: relative;
+     text-align: center;
+     padding-top: 0px;
+ }
+
+ /*.............*/
+
+
+
+ /*メイン全体を真ん中にする*/
+ .container {
+     text-align: center;
+ }
+
+ /*タイトルロゴのサイズ変更*/
+ .title-logo {
+     width: 276px;
+     height: 62px;
+     padding-top: 40px;
+ }
+
+
+ .btn {
+     color: rgb(236, 72, 153);
+ }
+
+
+
+
+ h2 {
+     color: rgb(255, 148, 148);
+     font-size: 12px;
+ }
+
+ /* メイン */
+ /*ボックスを中央*/
+ .list {
+     display: flex;
+     justify-content: center;
+     /* 文字したの線除去 */
+     text-decoration: none;
+ }
+
+ /*ボックス内の表示*/
+ h3 {
+
+     padding: 16px;
+     height: 43px;
+     border: 1px solid rgb(255, 148, 148);
+     border-radius: 12px;
+     width: 288px;
+     background: white;
+     color: rgb(255, 148, 148);
+     font-size: 14px;
+ }
+
+ .message-box {
+
+     /*上下の吹き出しの隙間*/
+     margin-top: 16px;
+
+     /*文字が長くなった時に吹き出しがタイムラインからはみ出さない様にする*/
+     max-width: 100%;
+
+     /* 文字サイズ */
+     font-size: 14px;
+ }
+
+
+ .message-content {
+
+     /* 文字を真ん中に表示 */
+     padding: 20px;
+
+ }
+
+
+ .left .message-box {
+
+     /*左寄せ*/
+     float: left;
+     line-height: 1.3em;
+
+     /* 文字・字背景色指定 */
+     color: rgb(255, 148, 148);
+     background-color: white;
+
+     /* なんか吹き出しっぽくするやつ */
+     border-radius: 30px 30px 30px 0px;
+     margin-right: 50px;
+ }
+
+ /* メッセージ（右側） */
+ .right .message-box {
+
+     /*右寄せ*/
+     float: right;
+     line-height: 1.3em;
+
+     /* 文字・字背景色指定 */
+     color: #fff;
+     background: rgb(255, 148, 148);
+
+     /* なんか吹き出しっぽくするやつ */
+     border-radius: 30px 30px 0px 30px;
+     margin-left: 50px;
+
+ }
+
+ /* メインEND */
+
+
+
+
+
+ .main {
+     color: rgb(255, 148, 148);
+     font-size: 14px;
+
+     /* 中央に配置 */
+     display: flex;
+     justify-content: center;
+
+
+ }
+
+ .input-box-list {
+
+     /* 矢印上の余白指定 */
+     margin-top: 45px;
+
+     padding: 16px;
+     height: 43px;
+     width: 288px;
+     border-radius: 12px;
+ }
+
+ .chat-name {
+
+     width: 320px;
+     height: 50px;
+     border: 1px solid rgb(255, 148, 148);
+     border-radius: 12px;
+
+ }
+
+ .chatexplanation {
+
+     width: 320px;
+     height: 150px;
+     border: 1px solid rgb(255, 148, 148);
+     border-radius: 12px;
+
+ }
+
+
+
+
+ /* メインEND */
+
+ #footer-message {
+
+     /*常に送信ボタンの横幅を引いたサイズに動的に計算するやつ*/
+     width: calc(100% - 75px);
+
+     /*文字がテキストエリアの中心になる様に隙間調整*/
+     line-height: 16px;
+     height: 48px;
+     padding: 14px 6px 0px 6px;
+
+     /*角丸・枠なし*/
+     border: none;
+     border-radius: 24px;
+
+     /*文字を左寄せ*/
+     text-align: left;
+
+     /*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
+     box-sizing: border-box;
+
+ }
+
+ .send-button {
+     /* 送信ボタンサイズ指定 */
+     width: 48px;
+     height: 48px;
+ }
+
+ .chat-screen {
+     padding: 16px;
+     font-size: 14px;
+     width: 100%;
+     height: 94px;
+     background-color: rgb(255, 148, 148);
+     /*←絶対位置(下)*/
+     position: absolute;
+     /*下に固定*/
+     bottom: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* フッター */
+ footer {
+     padding: 16px;
+     color: white;
+     font-size: 14px;
+     width: 100%;
+     height: 110px;
+     background-color: rgb(255, 148, 148);
+
+     /* 横に画像3つ、各画像下にテキストを表示する配置設定 */
+     display: flex;
+     align-items: center;
+
+     /* 間隔合わせ */
+     justify-content: space-around;
+
+     /*←絶対位置(下)*/
+     position: absolute;
+
+     /*下に固定*/
+     bottom: 0;
+
+ }
+
+ .footer-item {
+
+     /* 横に画像3つ、各画像下にテキストを表示する配置設定 */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+ }
+
+ .footer-button {
+
+     /* 文字したの線除去 */
+     text-decoration: none;
+
+ }
+
+ .footer-image {
+
+     height: 60px;
+     width: 60px;
+ }
+
+
+ /* フッターEND */
+ /* 新規以外OK */
+
+ /* ヘッダー */
+ .header {
+
+     color: white;
+     width: 100%;
+     height: 120px;
+     background-color: rgb(255, 148, 148);
+     display: flex;
+
+     /* 「チャット作成」を中心に配置 */
+     justify-content: center;
+
+     /* 矢印マークがチャット作成と同じ高さで配置される */
+     align-items: center;
+
+ }
+
+ /* 「チャット作成」 */
+ h1 {
+
+     margin-top: 78px;
+     font-size: 18px;
+
+ }
+
+ /*「矢印」*/
+ .back-button {
+
+     position: absolute;
+     left: 17px;
+
+     /* 矢印上の余白指定 */
+     margin-top: 75px;
+
+ }
+
+ .header-image {
+
+     height: 24px;
+     width: 24px;
+
+ }
+
+ .main-button {
+
+     width: 320px;
+     height: 50px;
+     font-size: 16px;
+     color: #FFFFFF;
+     background: rgb(255, 148, 148);
+     border-radius: 12px;
+     margin-top: 64px;
+     border: none;
+
+ }
+
+ .main-button-login {
+
+     width: 320px;
+     height: 50px;
+     font-size: 16px;
+     color: #FFFFFF;
+     background: rgb(255, 148, 148);
+     border-radius: 12px;
+     margin-top: 12px;
+     border: none;
+
+ }
+
+ html {
+
+     /* ブラウザによって表示されるデザインが違うので初期設定で余白を0にする */
+     margin: 0;
+     padding: 0;
+     background-color: rgb(255, 245, 228);
+
+     /*Arialがインストールされていない時にsans-serif（ゴシック体）で表示する*/
+     font-family: Arial, sans-serif;
+ }
+
+ .body {
+
+     /* ブラウザによって表示されるデザインが違うので初期設定で余白を0にする */
+     margin: 0;
+     padding: 0;
+     background-color: rgb(255, 245, 228);
+
+     /*Arialがインストールされていない時にsans-serif（ゴシック体）で表示する*/
+     font-family: Arial, sans-serif;
+ }
+
+ .loguin {
+
+     /* ブラウザによって表示されるデザインが違うので初期設定で余白を0にする */
+     margin: 0;
+     padding: 0;
+     background-color: rgb(247, 202, 224);
+
+     /*Arialがインストールされていない時にsans-serif（ゴシック体）で表示する*/
+     font-family: Arial, sans-serif;
+ }
