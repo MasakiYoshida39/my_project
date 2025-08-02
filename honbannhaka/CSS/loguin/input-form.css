@@ -1,13 +1,3 @@
- /*メインCSS*/
- .main-login {
-     background-color: rgb(247, 202, 224);
- }
-
- main {
-     background-color: rgb(255, 245, 228);
-     height: 732px;
- }
-
  /*入力ホーム全体のCSSについて*/
  .input-form {
      display: flex;
