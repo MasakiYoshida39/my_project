@@ -11,135 +11,10 @@
     <link rel="stylesheet" href="../CSS/reset.css" />
     <!----- main-button.cssを統一する為変更----->
     <link rel="stylesheet" href="../CSS/main-button.css" />
-    <style>
-        /*maneのCSS*/
-        main {
-            background-color: rgb(255, 245, 228);
-            height: 732px;
-        }
-
-        /*入力ホーム全体のCSSについて*/
-        .inputform {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /*入力欄のCSSについて*/
-        .inputbox {
-            text-align: left;
-            margin-top: 45px;
-        }
-
-        /*入力欄上の文字のCSSについて*/
-        .font {
-            color: rgb(255, 148, 148);
-
-        }
-
-
-        /*入力欄全体のCSSについて*/
-        .search_box {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-        }
-
-        /*入力の画像を真ん中にするため*/
-        .search_box input {
-            padding: 3px 0 3px 2em;
-        }
-
-        /*入力欄の画像の変更*/
-        .search_box::before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            background: url(../images/icon.png) no-repeat center center / auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-        /*入力欄全体のCSSについて*/
-        .search_box1 {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-        }
-
-        /*入力の画像を真ん中にするため*/
-        .search_box1 input {
-            padding: 3px 0 3px 2em;
-        }
-
-        /*入力欄の画像の変更*/
-        /*↓を複製し画像を設定する*/
-        .search_box1::before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            background: url(../images/mail.png) no-repeat center center / auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-        }
-
-        /*入力欄全体のCSSについて*/
-        .search_box2 {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-        }
-
-        /*入力の画像を真ん中にするため*/
-        .search_box2 input {
-            padding: 3px 0 3px 2em;
-        }
-
-        /*入力欄の画像の変更*/
-        /*↓を複製し画像を設定する*/
-        .search_box2::before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            background: url(../images/password.png) no-repeat center center / auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-        }
-
-
-
-
-        /*入力欄の枠について*/
-        .textbox {
-            /*↓枠のサイズがfigmaでの表記がわからないので後日*/
-            width: 265px;
-            height: 41px;
-            border-radius: 10px;
-            border-top: 1px solid rgb(255, 148, 148);
-            border-left: 1px solid rgb(255, 148, 148);
-            border-right: 2px solid rgb(255, 148, 148);
-            border-bottom: 2px solid rgb(255, 148, 148);
-            font-size: 16px;
-
-
-        }
-    </style>
+    <!----- input-form.cssを統一する為変更----->
+    <link rel="stylesheet" href="../CSS/loguin/input-form.css" />
+    <!----- main.cssを統一する為変更----->
+    <link rel="stylesheet" href="../CSS/loguin/main.css" />
 
 </head>
 
@@ -149,58 +24,53 @@
 
     <header>
         <h1>新規作成</h1>
-        <a href="chatlist.html" class="backbutton">
+        <a href="chatlist.html" class="back-button">
             <!-- ファイル統一の為変更 -->
-            <img src="../images/left.png" alt="Parrots" class="headerimage" />
+            <img src="../images/left.png" alt="Parrots" class="header-image" />
         </a>
     </header>
     <!----- ヘッダー END ----->
 
-
-
-
-
-
     <!----- メインコンテンツ ----->
     <main>
-        <div class="inputform">
+        <div class="input-form">
             <form action="main.html" method="post">
-                <div class="inputbox">
+                <div class="input-box">
                     <div class="font">
                         ユーザー名
                     </div>
-                    <div class="search_box">
-                        <input type="text" name="name" value="" class="textbox">
+                    <div class="search-box">
+                        <input type="text" name="name" value="" class="text-box">
                     </div>
                 </div>
 
-                <div class="inputbox">
+                <div class="input-box">
                     <div class="font">
                         メールアドレス
                     </div>
 
-                    <div class="search_box1">
+                    <div class="search-box1">
                         <input type="email" name="email-address" value="" placeholder="   xxxx@example.com"
-                            class="textbox"><br>
+                            class="text-box"><br>
                     </div>
 
 
                     <!----- タイプ何？ ----->
-                    <div class="inputbox">
+                    <div class="input-box">
                         <div class="font">
                             パスワード
                         </div>
-                        <div class="search_box2">
-                            <input type="text" name="mail" value="" class="textbox">
+                        <div class="search-box2">
+                            <input type="password" name="mail" value="" class="text-box">
                         </div>
                     </div>
 
-                    <div class="inputbox">
+                    <div class="input-box">
                         <div class="font">
                             パスワード（確認）
                         </div>
-                        <div class="search_box2">
-                            <input type="text" name="mail" value="" class="textbox">
+                        <div class="search-box2">
+                            <input type="password" name="mail" value="" class="text-box">
                         </div>
                     </div>
 
@@ -208,11 +78,6 @@
             </form>
         </div>
     </main>
-    <!----- メインコンテンツ END ----->
-    <footer>
-
-    </footer>
-
 </body>
 
 </html>

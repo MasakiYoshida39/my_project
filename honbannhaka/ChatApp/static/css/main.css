@@ -2,42 +2,31 @@
 main {
     background-color: rgb(255, 245, 228);
     height: 732px;
-
 }
 
 .main-login {
     background-color: rgb(247, 202, 224);
-
 }
 
 /*ヘッダー*/
 /*ヘッダー全体のCSS*/
 .header {
-    width: 100%;
-    /* 幅を明示的に全体に */
-    height: 400px;
+    height: 426px;
     background-color: rgb(255, 245, 228);
-    border-bottom-left-radius: 50px;
-    /* 下左角を丸める */
-    border-bottom-right-radius: 50px;
-    /* 下右角を丸める */
 
 }
-
-
 
 /*たらこ様のアイコンに関してのCSS*/
 .tarako {
     width: 407px;
-    height: 407px;
+    height: 403px
 }
-
 
 /*たらこ様を真ん中にするCSS*/
 .center {
     position: relative;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 47px;
 }
 
 /*.............*/

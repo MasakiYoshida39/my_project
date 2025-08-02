@@ -3,155 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ログイン</title>
-    <meta name="description" content="サイトキャプションを入力">
-    <meta name="keywords" content="サイトキーワードを,で区切って入力">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新規登録</title>
     <!----- reset.cssを統一する為変更----->
     <link rel="stylesheet" href="../CSS/reset.css" />
     <!----- main-button.cssを統一する為変更----->
     <link rel="stylesheet" href="../CSS/main-button.css" />
-    <style>
-        /*ヘッダー*/
-        /*ヘッダー全体のCSS*/
-        .header {
-            height: 426px;
-            background-color: rgb(255, 245, 228);
+    <!----- input-form.cssを統一する為変更----->
+    <link rel="stylesheet" href="../CSS/loguin/input-form.css" />
+    <!----- main.cssを統一する為変更----->
+    <link rel="stylesheet" href="../CSS/loguin/main.css" />
 
-        }
-
-        /*たらこ様のアイコンに関してのCSS*/
-        .tarako {
-            width: 407px;
-            height: 403px
-        }
-
-        /*たらこ様を真ん中にするCSS*/
-        .center {
-            position: relative;
-            text-align: center;
-            padding-top: 47px;
-        }
-
-        /*.............*/
-
-
-
-        /*メインCSS*/
-        main {
-            background-color: rgb(247, 202, 224);
-        }
-
-        /*メイン全体を真ん中にする*/
-        .container {
-            text-align: center;
-        }
-
-        /*タイトルロゴのサイズ変更*/
-        .titlelogo {
-            width: 276px;
-            height: 62px;
-            padding-top: 40px;
-        }
-
-        /*入力ホーム全体のCSSについて*/
-        .inputform {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /*入力欄のCSSについて*/
-        .inputbox {
-            text-align: left;
-            margin-top: 12px;
-        }
-
-        /*入力欄上の文字のCSSについて*/
-        .font {
-            color: rgb(255, 148, 148);
-
-        }
-
-        /*入力欄全体のCSSについて*/
-        .search_box1 {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-        }
-
-        /*入力の画像を真ん中にするため*/
-        .search_box1 input {
-            padding: 3px 0 3px 2em;
-        }
-
-        /*入力欄の画像の変更*/
-        /*↓を複製し画像を設定する*/
-        .search_box1::before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            background: url(../images/mail.png) no-repeat center center / auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-        }
-
-        /*入力欄全体のCSSについて*/
-        .search_box2 {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-        }
-
-        /*入力の画像を真ん中にするため*/
-        .search_box2 input {
-            padding: 3px 0 3px 2em;
-        }
-
-        /*入力欄の画像の変更*/
-        /*↓を複製し画像を設定する*/
-        .search_box2::before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            background: url(../images/password.png) no-repeat center center / auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-        }
-
-        /*入力欄の枠について*/
-        .textbox {
-            /*↓枠のサイズがfigmaでの表記がわからないので後日*/
-            width: 265px;
-            height: 41px;
-            border-radius: 10px;
-            border-top: 1px solid rgb(255, 148, 148);
-            border-left: 1px solid rgb(255, 148, 148);
-            border-right: 2px solid rgb(255, 148, 148);
-            border-bottom: 2px solid rgb(255, 148, 148);
-            font-size: 16px;
-
-        }
-
-
-
-
-        .btn {
-            color: rgb(236, 72, 153);
-        }
-
-
-
-
-        h2 {
-            color: rgb(255, 148, 148);
-            font-size: 12px;
-        }
-    </style>
 </head>
+
 
 <body>
     <!----- ヘッダー ----->
@@ -163,56 +27,42 @@
     </header>
     <!----- ヘッダー END ----->
 
-
-
-
-
-
-
-
-
-
-
-
-    <main>
+    <!----- メインコンテンツ ----->
+    <main class="main-login">
         <div class="container">
-            <img src="../images/title-logo.png" class="titlelogo">
+            <img src="../images/title-logo.png" class="title-logo">
             <h2>明太子好きのためのコミュニティ</h2>
-
-
-
-
-
-
-
-            <div class="inputform">
+        </div>
+        <div class="container">
+            <div class="input-form">
                 <form action="main.html" method="post">
 
-                    <div class="inputbox">
+                    <div class="input-box-login">
                         <div class="font">
                             メールアドレス
                         </div>
 
-                        <div class="search_box1">
+                        <div class="search-box">
                             <input type="email" name="email-address" value="" placeholder="   xxxx@example.com"
-                                class="textbox"><br>
+                                class="text-box"><br>
                         </div>
 
-                        <div class="inputbox">
+                        <div class="input-box-login">
                             <div class="font">
                                 パスワード
                             </div>
-                            <div class="search_box2">
-                                <input type="password" name="mail" value="" class="textbox">
+                            <div class="search-box1">
+                                <input type="password" name="mail" value="" class="text-box">
                             </div>
                         </div>
-                        <p><input type="submit" value="ログイン" class="main-button"></p>
+                        <p><input type="submit" value="ログイン" class="main-button-login"></p>
                 </form>
+                <div class="container">
+                    <h2>アカウントをお持ちでない方は、
+                        <a href="new.html" class="btn">こちら</a>
+                    </h2>
+                </div>
             </div>
-        </div>
-        <h2>アカウントをお持ちでない方は、
-            <a href="new.html" class="btn">こちら</a>
-        </h2>
     </main>
 </body>
 
