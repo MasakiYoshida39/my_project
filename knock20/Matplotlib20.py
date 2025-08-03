@@ -9,6 +9,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.widgets import Cursor
 
 
+
 """
 Matplotlib20本ノック１
 # xの値を0から9までの整数の配列として作成
@@ -421,4 +422,45 @@ plt.axis('equal')
 
 # グラフを表示
 plt.show()
+"""
+
+
+"""
+Matplotlib20本ノック20
+# 平均と標準偏差の設定
+mu1, sigma1 = 100, 15
+mu2, sigma2 = 90, 20
+mu3, sigma3 = 110, 10
+
+# 正規分布に従う乱数を生成
+x1 = mu1 + sigma1 * np.random.randn(10000)
+x2 = mu2 + sigma2 * np.random.randn(10000)
+x3 = mu3 + sigma3 * np.random.randn(10000)
+
+# ヒストグラムを描画
+plt.figure(figsize=(10, 6))
+plt.hist(
+    [x1, x2, x3],
+    bins=50,
+    density=True,
+    color=['yellow', 'skyblue', 'blue'],
+    label=['Group A', 'Group B', 'Group C'],
+    stacked=True,
+    alpha=0.7,  # 色を少し透明にすることで重なりが見える
+    edgecolor='black'  # 枠線を黒で描く
+)
+
+# タイトルとラベル
+plt.title('Distribution of Three Groups', fontsize=16)
+plt.xlabel('Value', fontsize=12)
+plt.ylabel('Probability Density', fontsize=12)
+
+# 凡例とグリッド
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.6)
+
+# グラフを表示
+plt.tight_layout()
+plt.show()
+
 """
