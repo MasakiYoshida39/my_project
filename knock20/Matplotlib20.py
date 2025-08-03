@@ -6,7 +6,7 @@ import numpy as np                  # 数値計算ライブラリNumPyをnpと�
 import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlibのpyplotモジュールをpltとしてインポート
 from mpl_toolkits.mplot3d import Axes3D
 
-
+from matplotlib.widgets import Cursor
 
 
 
@@ -352,5 +352,24 @@ plt.pie(
 )
 
 # グラフを画面に表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック17
+# 図と軸を作成
+fig = plt.figure(figsize=(8, 6))
+ax = fig.add_subplot(111, facecolor="#FFFFCC")  # 背景色を淡い黄色に設定
+
+# ランダムな点を生成してプロット
+x, y = 4 * (np.random.rand(2, 100) - 0.5)
+ax.plot(x, y, "o")
+ax.set_xlim(-2, 2)
+ax.set_ylim(-2, 2)
+
+# カーソル（十字線）を追加
+cursor = Cursor(ax, useblit=True, color='red', linewidth=2)
+
+# グラフを表示
 plt.show()
 """
