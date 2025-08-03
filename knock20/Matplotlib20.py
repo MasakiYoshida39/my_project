@@ -8,8 +8,26 @@ from mpl_toolkits.mplot3d import Axes3D
 
 from matplotlib.widgets import Cursor
 
+fig = plt.figure(figsize=(9, 6))
 
+# 1つ目のデータ: 折れ線グラフ
+x1 = np.arange(10)
+y1 = np.random.randint(-10, 10, 10)
 
+ax1 = fig.add_subplot(211)  # 上段のグラフ
+ax1.set_title('Result')
+ax1.set_xlabel('x axis')
+ax1.set_ylabel('y axis')
+ax1.plot(x1, y1, marker='o', color='blue')  # 折れ線グラフとしてプロット
+
+# 2つ目のデータ: 棒グラフ
+x2 = ['Sam', 'John', 'Kevin', 'Adm']
+y2 = np.random.randint(0, 200, 4)
+
+ax2 = fig.add_subplot(212)  # 下段のグラフ
+ax2.bar(x2, y2, color='green')
+
+plt.show()
 """
 Matplotlib20本ノック１
 # xの値を0から9までの整数の配列として作成
