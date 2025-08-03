@@ -4,8 +4,7 @@ Matplotlib20本ノック
 """
 import numpy as np                  # 数値計算ライブラリNumPyをnpとしてインポート
 import matplotlib.pyplot as plt     # グラフ描画ライブラリMatplotlibのpyplotモジュールをpltとしてインポート
-
-
+from mpl_toolkits.mplot3d import Axes3D
 
 
 
@@ -306,5 +305,26 @@ plt.imshow(date, vmin=0, vmax=1, cmap='Blues')
 plt.colorbar()
 
 # グラフを表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック15
+# パラメータtを定義
+theta = np.linspace(-4 * np.pi, 4 * np.pi, 100)
+z = np.linspace(-2, 2, 100)
+r = z**2 + 1
+x = r * np.sin(theta)
+y = r * np.cos(theta)
+
+# 3Dプロットのセットアップ
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+# プロット
+ax.plot(x, y, z, label='3D Curve')
+ax.legend()
+
+# 表示
 plt.show()
 """
