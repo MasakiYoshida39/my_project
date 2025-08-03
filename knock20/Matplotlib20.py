@@ -8,7 +8,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 from matplotlib.widgets import Cursor
 
-)
+
 """
 Matplotlib20本ノック１
 # xの値を0から9までの整数の配列として作成
@@ -394,5 +394,31 @@ y2 = np.random.randint(0, 200, 4)
 ax2 = fig.add_subplot(212)  # 下段のグラフ
 ax2.bar(x2, y2, color='green')
 
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック19
+# 各項目のラベルとデータの定義
+labels = ['Chips', 'Hotdogs', 'Cookies', 'Chocolates']
+sizes = [15, 30, 45, 10]
+
+# "Hotdogs" の部分を少しだけ飛び出させる
+explode = (0, 0.1, 0, 0)
+
+# 円グラフの描画
+plt.pie(
+    sizes,                    # 各セクションの値
+    explode=explode,          # 一部を外側にずらす
+    labels=labels,            # ラベル（項目名）
+    autopct='%1.1f%%',        # パーセンテージ表示（小数1桁）
+    shadow=True,              # 影をつけて立体感を出す
+    startangle=90             # 上（90度）から描画開始
+)
+
+# 円が楕円にならないように軸の比を1:1にする
+plt.axis('equal')
+
+# グラフを表示
 plt.show()
 """
