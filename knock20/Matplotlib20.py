@@ -8,6 +8,8 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 
+
+
 """
 Matplotlib20本ノック１
 # xの値を0から9までの整数の配列として作成
@@ -326,5 +328,29 @@ ax.plot(x, y, z, label='3D Curve')
 ax.legend()
 
 # 表示
+plt.show()
+"""
+
+"""
+Matplotlib20本ノック1６
+# 各果物のデータ（割合や数量など）をNumPy配列で定義
+x = np.array([100, 200, 300, 400, 500])
+
+# 各データに対応するラベル（果物の名前）
+labels = ["Apple", "Banana", "Orange", "Grape", "Strawberry"]
+
+# 各ラベルに対応する色
+colors = ['red', 'yellow', 'orange', 'purple', 'pink']
+
+# 円グラフを描画
+plt.pie(
+    x,                      # 円グラフに使用するデータ
+    labels=labels,          # 各領域のラベルを設定
+    colors=colors,          # 各領域の色を指定
+    counterclock=False,     # 時計回りに描画（Falseに設定）
+    startangle=90           # 円グラフの描画を上（90度）から開始
+)
+
+# グラフを画面に表示
 plt.show()
 """
