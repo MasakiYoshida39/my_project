@@ -8,20 +8,21 @@ Scikit-learn20本ノック
 """
 
 
-# 数値計算ライブラリ NumPy をインポート（np という別名で）
+# 数値計算ライブラリ NumPy をインポート（npという別名で）
 import numpy as np
 
-# データ分析ライブラリ Pandas をインポート（pd という別名で）
+# データ分析ライブラリ Pandas をインポート（pdという別名で）
 import pandas as pd
 
-# グラフ描画ライブラリ matplotlib の pyplot モジュールをインポート（plt という別名で）
+# グラフ描画ライブラリ matplotlib の pyplot モジュールをインポート（pltという別名で）
 import matplotlib.pyplot as plt
 
-# ファイル名のパターンマッチングを行う glob 関数をインポート
+# ファイル名のパターンマッチングを行う glob 関数をインポート（今回は未使用）
 from glob import glob
 
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
 df = pd.read_csv('data.csv')
+
 
 
 """
@@ -89,4 +90,33 @@ num = df['Age'].isnull().sum()
 rand = np.random.randint(ave - std, ave + std, size=num)
 
 print(rand)
+"""
+
+
+"""
+Scikit-learn20本ノック６
+# 'Age'列の平均値を計算（欠損値は無視される）
+ave = df['Age'].mean()
+
+# 'Age'列の標準偏差を計算（欠損値は無視される）
+std = df['Age'].std()
+
+# 'Age'列の欠損値（NaN）の数をカウント
+num = df['Age'].isnull().sum()
+
+# 欠損値の個数分だけ、平均±標準偏差の範囲でランダムな整数を生成（補完用）
+# randintの範囲は整数で指定するため、int()でキャストする
+rand = np.random.randint(int(ave - std), int(ave + std), size=num)
+
+# 元のDataFrameの'Age'列の欠損値部分に、生成したランダムな整数を代入して補完
+df.loc[df['Age'].isnull(), 'Age'] = rand
+
+# 補完後の'Age'列のデータを、70個のビンを使ってヒストグラムとして描画
+ab = df['Age'].hist(bins=70)
+
+# ヒストグラムのグラフを画面に表示
+plt.show()
+
+# 描画オブジェクトを表示（オブジェクトの情報が出力されるが、グラフはplt.show()で表示済み）
+print(ab)
 """
