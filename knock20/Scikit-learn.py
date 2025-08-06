@@ -20,6 +20,11 @@ import matplotlib.pyplot as plt
 # ファイル名のパターンマッチングを行う glob 関数をインポート
 from glob import glob
 
+# CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
+df = pd.read_csv('data.csv')
+
+
+
 
 """
 Scikit-learn20本ノック１
@@ -53,5 +58,20 @@ df = pd.read_csv('data.csv')
 
 # 欠損値（NaN）を含む行をすべて削除し、新しいDataFrameとして返す（元のdfは変更されない）
 ab = df.dropna()
+print(ab)
+"""
+
+"""
+Scikit-learn20本ノック3
+# 欠損値（NaN）を含む行をすべて削除し、新しいDataFrameとして返す（元のdfは変更されない）
+ab = df.dropna()
+
+# 'Age' 列だけを取り出し、欠損値（NaN）を 0 に置き換えた新しいDataFrameを作成
+df_zero = df[['Age']].fillna(0)
+
+# 補完済みの 'Age' 列のデータから、最後の3行だけを抽出して変数 ab に再代入
+ab = df_zero.tail(3)
+
+# 最後に ab の中身を出力（これは 'Age' 列の最後の3行、欠損値があれば 0 に置き換えられている）
 print(ab)
 """
