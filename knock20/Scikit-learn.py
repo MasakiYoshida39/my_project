@@ -24,7 +24,6 @@ from glob import glob
 df = pd.read_csv('data.csv')
 
 
-
 """
 Scikit-learn20本ノック１
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
@@ -118,5 +117,17 @@ ab = df['Age'].hist(bins=70)
 plt.show()
 
 # 描画オブジェクトを表示（オブジェクトの情報が出力されるが、グラフはplt.show()で表示済み）
+print(ab)
+"""
+
+
+"""
+Scikit-learn20本ノック7
+# DataFrameの 'Sex' 列だけを抽出し、最初の5行を表示（欠損があるか確認用）
+ab = df[['Sex']].head()
+print(ab)
+
+# 'Sex'列の欠損値を「前の行の値（ffill = forward fill）」で補完し、先頭5行を表示
+ab = df[['Sex']].fillna(method="ffill").head()
 print(ab)
 """
