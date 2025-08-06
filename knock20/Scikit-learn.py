@@ -88,7 +88,5 @@ num = df['Age'].isnull().sum()
 # 欠損値の個数と同じ数だけ、平均±標準偏差の範囲でランダムな整数を生成（補完用データ）
 rand = np.random.randint(ave - std, ave + std, size=num)
 
-
 print(rand)
-
 """
