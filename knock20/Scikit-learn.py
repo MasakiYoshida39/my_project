@@ -21,17 +21,15 @@ import matplotlib.pyplot as plt
 from glob import glob
 
 
-
-
-
-
 """
 Scikit-learn20本ノック１
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
 df = pd.read_csv('data.csv')
 
 # 読み込んだデータの先頭5行を表示（データの中身を確認するため）
-df.head()
+ab = df.head()
+
+print(ab)
 """
 
 """
@@ -42,5 +40,18 @@ df = pd.read_csv('data.csv')
 
 # 各列における欠損値（NaN）の個数をカウントして表示する
 # 結果は列名と欠損値の個数がペアになった形式で出力される
-df.isnull().sum()
+
+ab = df.isnull().sum()
+print(ab)
+"""
+
+
+"""
+Scikit-learn20本ノック3
+# CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
+df = pd.read_csv('data.csv')
+
+# 欠損値（NaN）を含む行をすべて削除し、新しいDataFrameとして返す（元のdfは変更されない）
+ab = df.dropna()
+print(ab)
 """
