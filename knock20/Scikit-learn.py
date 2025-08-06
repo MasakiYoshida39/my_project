@@ -20,8 +20,11 @@ import matplotlib.pyplot as plt
 # ファイル名のパターンマッチングを行う glob 関数をインポート（今回は未使用）
 from glob import glob
 
-# scikit-learn の MinMaxScaler をインポート
+# scikit-learn の MinMaxScaler をインポート（今回は未使用）
 from sklearn.preprocessing import MinMaxScaler
+
+# scikit-learn の StandardScaler をインポート（今回はこちらを使用）
+from sklearn.preprocessing import StandardScaler
 
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
 df = pd.read_csv('data.csv')
@@ -159,6 +162,18 @@ mmscaler.fit(np.array([lim_min, lim_max]).reshape(-1, 1))
 
 # 'Age'列をスケーラーで変換し、0〜1の範囲にスケーリングした結果を得る
 ab = mmscaler.transform(df[['Age']])
+
+# スケーリング後の結果を出力
+print(ab)
+"""
+
+"""
+Scikit-learn20本ノック10
+# StandardScaler のインスタンスを作成（平均0・標準偏差1になるよう変換）
+ss = StandardScaler()
+
+# 'Age'列を標準化（平均0、標準偏差1のスケールに変換）
+ab = ss.fit_transform(df[['Age']])
 
 # スケーリング後の結果を出力
 print(ab)
