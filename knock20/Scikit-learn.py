@@ -24,8 +24,6 @@ from glob import glob
 df = pd.read_csv('data.csv')
 
 
-
-
 """
 Scikit-learn20本ノック１
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
@@ -62,7 +60,7 @@ print(ab)
 """
 
 """
-Scikit-learn20本ノック3
+Scikit-learn20本ノック4
 # 欠損値（NaN）を含む行をすべて削除し、新しいDataFrameとして返す（元のdfは変更されない）
 ab = df.dropna()
 
@@ -74,4 +72,23 @@ ab = df_zero.tail(3)
 
 # 最後に ab の中身を出力（これは 'Age' 列の最後の3行、欠損値があれば 0 に置き換えられている）
 print(ab)
+"""
+
+"""
+Scikit-learn20本ノック5
+# 'Age'列の平均値（NaNは無視される）を計算し、変数 ave に格納
+ave = df['Age'].mean()
+
+# 'Age'列の標準偏差（NaNは無視される）を計算し、変数 std に格納
+std = df['Age'].std()
+
+# 'Age'列の欠損値（NaN）の数をカウントし、変数 num に格納
+num = df['Age'].isnull().sum()
+
+# 欠損値の個数と同じ数だけ、平均±標準偏差の範囲でランダムな整数を生成（補完用データ）
+rand = np.random.randint(ave - std, ave + std, size=num)
+
+
+print(rand)
+
 """
