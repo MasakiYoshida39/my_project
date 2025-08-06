@@ -20,8 +20,12 @@ import matplotlib.pyplot as plt
 # ファイル名のパターンマッチングを行う glob 関数をインポート（今回は未使用）
 from glob import glob
 
+# scikit-learn の MinMaxScaler をインポート
+from sklearn.preprocessing import MinMaxScaler
+
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
 df = pd.read_csv('data.csv')
+
 
 
 
@@ -138,5 +142,24 @@ Scikit-learn20本ノック8
 # 'Sex'列をワンホットエンコーディング（カテゴリをダミー変数に変換）し、
 # 'male'列を削除（基準カテゴリとして除外）→ 最初の5行を表示
 ab = pd.get_dummies(df['Sex']).drop('male', axis=1).head()
+print(ab)
+"""
+
+"""
+Scikit-learn20本ノック9
+# MinMaxScaler のインスタンスを作成（0〜1の範囲にスケーリング）
+mmscaler = MinMaxScaler(feature_range=(0, 1), copy=True)
+
+# 'Age'列の最小値と最大値を取得
+lim_min, lim_max = df['Age'].min(), df['Age'].max()
+
+# 最小値と最大値を使ってスケーラーを学習させる
+# reshape(-1, 1) で2次元配列に変換（scikit-learnの要求仕様）
+mmscaler.fit(np.array([lim_min, lim_max]).reshape(-1, 1))
+
+# 'Age'列をスケーラーで変換し、0〜1の範囲にスケーリングした結果を得る
+ab = mmscaler.transform(df[['Age']])
+
+# スケーリング後の結果を出力
 print(ab)
 """
