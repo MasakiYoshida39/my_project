@@ -26,12 +26,10 @@ from sklearn.preprocessing import MinMaxScaler
 # scikit-learn の StandardScaler をインポート（今回はこちらを使用）
 from sklearn.preprocessing import StandardScaler
 
-# CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
-df = pd.read_csv('data.csv')
 
 
-
-
+# 確認表示
+print(dfs.head())
 """
 Scikit-learn20本ノック１
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
@@ -177,4 +175,24 @@ ab = ss.fit_transform(df[['Age']])
 
 # スケーリング後の結果を出力
 print(ab)
+"""
+
+
+"""
+Scikit-learn20本ノック11
+# CSV読み込み
+df_wine = pd.read_csv("wine.csv")
+
+# DataFrame情報表示
+df_wine.info()
+print(df_wine.head(2))
+
+# StandardScalerインスタンス作成
+ss = StandardScaler()
+
+# class 列を除いて標準化
+dfs = pd.DataFrame(
+    ss.fit_transform(df_wine.drop("class", axis=1)),
+    columns=df_wine.columns.drop("class")
+)
 """
