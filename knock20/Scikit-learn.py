@@ -26,7 +26,37 @@ from sklearn.preprocessing import MinMaxScaler
 # scikit-learn の StandardScaler をインポート（今回はこちらを使用）
 from sklearn.preprocessing import StandardScaler
 
+from sklearn.decomposition import PCA #主成分分析器
+# CSV読み込み
+df_wine = pd.read_csv("wine.csv")
 
+# DataFrame情報表示
+df_wine.info()
+print(df_wine.head(2))
+
+# StandardScalerインスタンス作成
+ss = StandardScaler()
+
+# class 列を除いて標準化
+dfs = pd.DataFrame(
+    ss.fit_transform(df_wine.drop("class", axis=1)),
+    columns=df_wine.columns.drop("class")
+)
+
+#主成分分析の実行
+pca = PCA()
+pca.fit(dfs) # 学習
+# データを主成分空間に写像
+feature = pca.transform(dfs)
+# 主成分得点
+feature = pd.DataFrame(feature, columns=["PC{}".format(x + 1) for x in range(len(dfs.columns))]) # データフレームへ変換 以下のようにカラム名を設定
+feature.head()
+
+# 寄与率
+print(pca.explained_variance_ratio_)
+
+# 累積寄与率
+print(np.cumsum(pca.explained_variance_ratio_))
 
 
 """
