@@ -28,8 +28,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 
-# 確認表示
-print(dfs.head())
+
 """
 Scikit-learn20本ノック１
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
@@ -195,4 +194,6 @@ dfs = pd.DataFrame(
     ss.fit_transform(df_wine.drop("class", axis=1)),
     columns=df_wine.columns.drop("class")
 )
+# 確認表示
+print(dfs.head())
 """
