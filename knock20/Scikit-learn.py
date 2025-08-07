@@ -207,3 +207,14 @@ feature = pca.transform(dfs)
 feature = pd.DataFrame(feature, columns=["PC{}".format(x + 1) for x in range(len(dfs.columns))]) # データフレームへ変換 以下のようにカラム名を設定
 feature.head()
 """
+
+"""
+Scikit-learn20本ノック1３
+# 第一主成分と第二主成分でプロットする
+plt.figure(figsize=(6, 6))
+plt.scatter(feature[:, 0], feature[:, 1], alpha=0.8, c=list(df.iloc[:, 0]))
+plt.grid()
+plt.xlabel("PC1")
+plt.ylabel("PC2")
+plt.show()
+"""
