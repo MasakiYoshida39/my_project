@@ -30,6 +30,7 @@ from sklearn.decomposition import PCA #主成分分析器
 
 from sklearn.linear_model import LogisticRegression
 
+from sklearn.metrics import accuracy_score
 """
 Scikit-learn20本ノック１
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
@@ -236,3 +237,11 @@ lr = LogisticRegression() # ロジスティック回帰モデルのインスタ�
 lr.fit(X_train, y_train) # ロジスティック回帰モデルの重みを学習
 """
 
+"""
+Scikit-learn20本ノック16
+y_pred = lr.predict(X_test)
+print(y_pred)
+from sklearn.metrics import accuracy_score
+
+print('accuracy = ', accuracy_score(y_true=y_test, y_pred=y_pred))
+"""
