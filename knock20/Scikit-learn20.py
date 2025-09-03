@@ -245,3 +245,18 @@ from sklearn.metrics import accuracy_score
 
 print('accuracy = ', accuracy_score(y_true=y_test, y_pred=y_pred))
 """
+
+"""
+Scikit-learn20本ノック17
+from sklearn.neighbors import KNeighborsClassifier
+
+knc = KNeighborsClassifier(n_neighbors=40)
+knc.fit(X_train, y_train)
+
+# 予測　
+y_pred = knc.predict(X_test)
+
+# 評価 R^2
+score = knc.score(X_test, y_test)
+print(score)
+"""
