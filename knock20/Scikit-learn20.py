@@ -280,3 +280,13 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression() # 線形重回帰
 regressor.fit(X_train, y_train) # 学習
 """
+
+"""
+Scikit-learn20本ノック20
+from sklearn.metrics import r2_score, mean_squared_error
+
+y_pred = regressor.predict(X_test) # テストデータでの予測
+
+print("R2=", r2_score(y_test, y_pred))
+print("RMSE=", np.sqrt(mean_squared_error(y_test, y_pred)))
+"""
