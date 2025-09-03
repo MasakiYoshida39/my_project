@@ -28,6 +28,7 @@ from sklearn.preprocessing import StandardScaler
 
 from sklearn.decomposition import PCA #主成分分析器
 
+
 """
 Scikit-learn20本ノック１
 # CSVファイル「data.csv」を読み込み、DataFrame形式の変数 df に格納する
@@ -218,3 +219,11 @@ plt.xlabel("PC1")
 plt.ylabel("PC2")
 plt.show()
 """
+
+"""
+Scikit-learn20本ノック1３
+X = feature.iloc[:, :2] # 入力データ
+y = df_wine.iloc[:, 0] # 出力データ
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 3) # 80%のデータを学習データに、20%を検証データにする
+"""
+
