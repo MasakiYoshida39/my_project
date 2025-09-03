@@ -253,10 +253,22 @@ from sklearn.neighbors import KNeighborsClassifier
 knc = KNeighborsClassifier(n_neighbors=40)
 knc.fit(X_train, y_train)
 
-# 予測　
+# 予測
 y_pred = knc.predict(X_test)
 
 # 評価 R^2
 score = knc.score(X_test, y_test)
 print(score)
+"""
+
+"""
+Scikit-learn20本ノック18
+# 訓練データとテストデータに分割するメソッドのインポート
+from sklearn.model_selection import train_test_split 
+df_slump = pd.read_csv('slump.csv')
+df_slump.head(2)
+X = df_slump.iloc[:, :-1]
+y = df_slump.iloc[:, -1]
+X = ss.fit_transform(X) 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.4, random_state=0)
 """
