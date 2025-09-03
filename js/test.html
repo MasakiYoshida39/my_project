@@ -9,12 +9,16 @@
 <body>
     <h1>Hello, JavaScript!</h1>
     <script>
-        //'use strict';を記載することでコンソール画面でエラーを吐き出す事が可能
-        "use strict";
+        const output = document.getElementById("output");
+        const values = [undefined, 0, 10n, true, "foo", Symbol("id"), Math, null, alert];
 
-        let
-            x = 10;
-        console.log(x);
+        for (let i = 0; i < values.length; i++) {
+            const v = values[i];
+            const p = document.createElement("p");
+            p.textContent = v + " → " + typeof v;
+            output.appendChild(p);
+        }
+
     </script>
 </body>
 
