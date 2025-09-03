@@ -272,3 +272,11 @@ y = df_slump.iloc[:, -1]
 X = ss.fit_transform(X) 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.4, random_state=0)
 """
+
+
+"""
+Scikit-learn20本ノック19
+from sklearn.linear_model import LinearRegression 
+regressor = LinearRegression() # 線形重回帰
+regressor.fit(X_train, y_train) # 学習
+"""
