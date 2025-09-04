@@ -206,12 +206,46 @@ alert('World')</script>
       default:
         alert("I don't know such values");
     }
-    -->
-
-
-
   </script>
+  -->
 
+  <!--関数
+  <script>
+    /* 基本的な関数の書き方
+    function showMessage() {
+      alert('Hello everyone!');
+    }
+    showMessage();
+    showMessage();
+     */
+
+
+     /* 忘れてたところ
+    let userName = 'John'; // グローバル変数
+
+    function showMessage() {
+      userName = "Bob"; // (1) グローバル変数を変更
+      let message = 'Hello, ' + userName;
+      alert(message);
+    }
+
+    alert(userName); // ① John（まだ関数呼んでない）
+    showMessage();   // ② 関数呼び出し → userName が "Bob" に変更される
+    //関数を呼ばれた為変更せれた
+    alert(userName); // ③ Bob（関数が外部変数を変えた）
+    */
+
+
+    /*パラメータと引数の違い
+    // ← ここで使っている from, text は **パラメータ**
+    function showMessage(from, text) {
+      alert(from + ': ' + text);
+    }
+    // ← ここで渡している 'Ann', 'Hello!' は **引数**
+    showMessage('Ann', 'Hello!');
+    */
+  </script>
+  -->
 
 
 </body>
